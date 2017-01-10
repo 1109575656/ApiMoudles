@@ -19,3 +19,9 @@ E:\YuPenApi 公共 - 副本\DBUtility\bin\Debug\Newtonsoft.Json.xml
 E:\YuPenApi 公共 - 副本\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
 E:\YuPenApi 公共 - 副本\DBUtility\obj\Debug\DBUtility.dll
 E:\YuPenApi 公共 - 副本\DBUtility\obj\Debug\DBUtility.pdb
+E:\Api加密\DBUtility\bin\Debug\DBUtility.dll
+E:\Api加密\DBUtility\bin\Debug\DBUtility.pdb
+E:\Api加密\DBUtility\bin\Debug\Newtonsoft.Json.dll
+E:\Api加密\DBUtility\bin\Debug\Newtonsoft.Json.xml
+E:\Api加密\DBUtility\obj\Debug\DBUtility.dll
+E:\Api加密\DBUtility\obj\Debug\DBUtility.pdb

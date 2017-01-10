@@ -6,9 +6,9 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
-using YuPenApi.Log;
+using Api.Log;
 
-namespace YuPenApi
+namespace Api
 {
     public class WebApiApplication : System.Web.HttpApplication
     {

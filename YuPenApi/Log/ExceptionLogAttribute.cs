@@ -6,7 +6,7 @@ using System.Text;
 using System.Web;
 using System.Web.Http.Filters;
 
-namespace YuPenApi.Log
+namespace Api.Log
 {
     public class ExceptionLogAttribute : ExceptionFilterAttribute
     { 
@@ -39,7 +39,7 @@ namespace YuPenApi.Log
         }
         public override void OnException(HttpActionExecutedContext actionExecutedContext)
         {
-            //先在YuPenApi中建立LogError文件夹
+            //先在Api中建立LogError文件夹
             string path = HttpContext.Current.Server.MapPath("~/LogError/LogError" + DateTime.Now.ToString("yyyy-MM-dd") + ".txt");
             StringBuilder sb = new StringBuilder();
             sb.AppendLine("");

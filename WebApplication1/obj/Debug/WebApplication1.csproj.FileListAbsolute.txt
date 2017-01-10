@@ -1,1 +1,0 @@
-D:\vsProject\YuPenApi\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache

@@ -7,7 +7,7 @@ using System.Text;
 using System.Web;
 using DBUtility;
 
-namespace YuPenApi.Helper
+namespace Api.Helper
 {
     /// <summary>
     /// 解密

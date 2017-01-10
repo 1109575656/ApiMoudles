@@ -9,7 +9,7 @@ using DataLayer.Model;
 using BusinessLayer.Repository;
 using System.Linq.Expressions;
 
-namespace YuPenApi.Controllers
+namespace Api.Controllers
 {
     public  class BaseApiControl<TModel, IRepository> : ApiController
         where TModel : class

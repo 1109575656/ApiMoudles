@@ -6,7 +6,7 @@ using System.Web;
 using System.Web.Http.Filters;
 using DataLayer.Model;
 
-namespace YuPenApi.Log
+namespace Api.Log
 {
     /// <summary>
     /// 权限控制

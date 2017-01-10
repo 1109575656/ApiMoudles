@@ -8,7 +8,7 @@ using System.Web.Http.Filters;
 using System.Web.Http.Results;
 using DataLayer.Model;
 
-namespace YuPenApi.Log
+namespace Api.Log
 {
     /// <summary>
     /// 请求响应日志

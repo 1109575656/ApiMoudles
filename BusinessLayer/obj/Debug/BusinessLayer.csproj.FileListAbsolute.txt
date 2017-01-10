@@ -31,3 +31,14 @@ E:\YuPenApi 公共 - 副本\BusinessLayer\bin\Debug\Newtonsoft.Json.xml
 E:\YuPenApi 公共 - 副本\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
 E:\YuPenApi 公共 - 副本\BusinessLayer\obj\Debug\BusinessLayer.dll
 E:\YuPenApi 公共 - 副本\BusinessLayer\obj\Debug\BusinessLayer.pdb
+E:\Api加密\BusinessLayer\bin\Debug\BusinessLayer.dll
+E:\Api加密\BusinessLayer\bin\Debug\BusinessLayer.pdb
+E:\Api加密\BusinessLayer\bin\Debug\DataLayer.dll
+E:\Api加密\BusinessLayer\bin\Debug\DBUtility.dll
+E:\Api加密\BusinessLayer\bin\Debug\Newtonsoft.Json.dll
+E:\Api加密\BusinessLayer\bin\Debug\DataLayer.pdb
+E:\Api加密\BusinessLayer\bin\Debug\DBUtility.pdb
+E:\Api加密\BusinessLayer\bin\Debug\Newtonsoft.Json.xml
+E:\Api加密\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+E:\Api加密\BusinessLayer\obj\Debug\BusinessLayer.dll
+E:\Api加密\BusinessLayer\obj\Debug\BusinessLayer.pdb

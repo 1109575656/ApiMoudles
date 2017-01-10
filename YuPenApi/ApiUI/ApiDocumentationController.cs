@@ -12,7 +12,7 @@ using Alan.WebApiDoc;
 using DataLayer.Model;
 using BusinessLayer.Repository;
 
-namespace YuPenApi.ApiUI
+namespace Api.ApiUI
 {
     /// <summary>
     /// 接口文档
@@ -30,7 +30,7 @@ namespace YuPenApi.ApiUI
                 var docModels = HttpContext.Current.Cache.Get("_ApiDocumentModels") as List<DocumentModel.MemberNode>;
                 if (docModels == null)
                 {
-                    var doc = DocumentModel.GetDocument(HttpContext.Current.Server.MapPath("~/App_Data/YuPenApi.XML")).membersNode.Members;
+                    var doc = DocumentModel.GetDocument(HttpContext.Current.Server.MapPath("~/App_Data/Api.XML")).membersNode.Members;
                     HttpContext.Current.Cache.Add("_ApiDocumentModels", doc, null, DateTime.MaxValue, TimeSpan.FromDays(1),
                         System.Web.Caching.CacheItemPriority.Default, null);
                     docModels = doc;

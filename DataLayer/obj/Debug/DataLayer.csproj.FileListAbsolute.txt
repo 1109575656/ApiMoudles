@@ -13,3 +13,7 @@ E:\YuPenApi 公共 - 副本\DataLayer\bin\Debug\DataLayer.pdb
 E:\YuPenApi 公共 - 副本\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache
 E:\YuPenApi 公共 - 副本\DataLayer\obj\Debug\DataLayer.dll
 E:\YuPenApi 公共 - 副本\DataLayer\obj\Debug\DataLayer.pdb
+E:\Api加密\DataLayer\bin\Debug\DataLayer.dll
+E:\Api加密\DataLayer\bin\Debug\DataLayer.pdb
+E:\Api加密\DataLayer\obj\Debug\DataLayer.dll
+E:\Api加密\DataLayer\obj\Debug\DataLayer.pdb

@@ -1,0 +1,21 @@
+D:\vsProject\YuPenApi\DBUtility\bin\Debug\DBUtility.dll
+D:\vsProject\YuPenApi\DBUtility\bin\Debug\DBUtility.pdb
+D:\vsProject\YuPenApi\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
+D:\vsProject\YuPenApi\DBUtility\obj\Debug\DBUtility.dll
+D:\vsProject\YuPenApi\DBUtility\obj\Debug\DBUtility.pdb
+D:\vsProject\YuPenApi\DBUtility\bin\Debug\Newtonsoft.Json.dll
+D:\vsProject\YuPenApi\DBUtility\bin\Debug\Newtonsoft.Json.xml
+C:\Users\lenovo\Desktop\YuPenApi\DBUtility\bin\Debug\DBUtility.dll
+C:\Users\lenovo\Desktop\YuPenApi\DBUtility\bin\Debug\DBUtility.pdb
+C:\Users\lenovo\Desktop\YuPenApi\DBUtility\bin\Debug\Newtonsoft.Json.dll
+C:\Users\lenovo\Desktop\YuPenApi\DBUtility\bin\Debug\Newtonsoft.Json.xml
+C:\Users\lenovo\Desktop\YuPenApi\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
+C:\Users\lenovo\Desktop\YuPenApi\DBUtility\obj\Debug\DBUtility.dll
+C:\Users\lenovo\Desktop\YuPenApi\DBUtility\obj\Debug\DBUtility.pdb
+E:\YuPenApi 公共 - 副本\DBUtility\bin\Debug\DBUtility.dll
+E:\YuPenApi 公共 - 副本\DBUtility\bin\Debug\DBUtility.pdb
+E:\YuPenApi 公共 - 副本\DBUtility\bin\Debug\Newtonsoft.Json.dll
+E:\YuPenApi 公共 - 副本\DBUtility\bin\Debug\Newtonsoft.Json.xml
+E:\YuPenApi 公共 - 副本\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
+E:\YuPenApi 公共 - 副本\DBUtility\obj\Debug\DBUtility.dll
+E:\YuPenApi 公共 - 副本\DBUtility\obj\Debug\DBUtility.pdb

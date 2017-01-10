@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Alan.Authentication</id>
+    <version>1.0.2</version>
+    <title>Alan.Authentication</title>
+    <authors>Alan Wei</authors>
+    <owners>Alan Wei</owners>
+    <licenseUrl>https://github.com/Allen-Wei/Alan.Authentication</licenseUrl>
+    <projectUrl>https://github.com/Allen-Wei/Alan.Authentication</projectUrl>
+    <iconUrl>https://avatars0.githubusercontent.com/u/2927578</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Authentication for Web Develop</description>
+    <summary />
+    <releaseNotes>See project site for more information.</releaseNotes>
+    <copyright>Copyright 2015</copyright>
+    <tags>Alan Authentication</tags>
+  </metadata>
+</package>

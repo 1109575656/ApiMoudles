@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>AlanWay.System.Linq.Dynamic</id>
+    <version>0.0.1</version>
+    <title>AlanWay.System.Linq.Dynamic</title>
+    <authors>ScottGu</authors>
+    <owners>ScottGu</owners>
+    <licenseUrl>https://msdn.microsoft.com/en-US/vstudio/bb894665.aspx</licenseUrl>
+    <projectUrl>http://dynamiclinq.codeplex.com/</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/Allen-Wei/Disk/master/dialectsoftware.large.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Dynamic linq library</description>
+    <summary />
+    <releaseNotes>The copy of http://weblogs.asp.net/scottgu/dynamic-linq-part-1-using-the-linq-dynamic-query-library</releaseNotes>
+    <copyright>Copyright 2015</copyright>
+    <tags>Linq DynamicLinq System.Linq.Dynamic</tags>
+  </metadata>
+</package>

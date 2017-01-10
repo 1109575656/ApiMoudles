@@ -1,0 +1,168 @@
+D:\vsProject\YuPenApi\YuPenApi\obj\Debug\YuPenApi.csprojResolveAssemblyReference.cache
+D:\vsProject\YuPenApi\YuPenApi\bin\YuPenApi.dll.config
+D:\vsProject\YuPenApi\YuPenApi\bin\YuPenApi.dll
+D:\vsProject\YuPenApi\YuPenApi\bin\YuPenApi.pdb
+D:\vsProject\YuPenApi\YuPenApi\bin\YuPenApi.XML
+D:\vsProject\YuPenApi\YuPenApi\bin\Alan.WebApiDoc.dll
+D:\vsProject\YuPenApi\YuPenApi\bin\Antlr3.Runtime.dll
+D:\vsProject\YuPenApi\YuPenApi\bin\BusinessLayer.dll
+D:\vsProject\YuPenApi\YuPenApi\bin\DataLayer.dll
+D:\vsProject\YuPenApi\YuPenApi\bin\DBUtility.dll
+D:\vsProject\YuPenApi\YuPenApi\bin\Microsoft.Web.Infrastructure.dll
+D:\vsProject\YuPenApi\YuPenApi\bin\Newtonsoft.Json.dll
+D:\vsProject\YuPenApi\YuPenApi\bin\System.Linq.Dynamic.dll
+D:\vsProject\YuPenApi\YuPenApi\bin\System.Net.Http.Formatting.dll
+D:\vsProject\YuPenApi\YuPenApi\bin\System.Web.Helpers.dll
+D:\vsProject\YuPenApi\YuPenApi\bin\System.Web.Http.dll
+D:\vsProject\YuPenApi\YuPenApi\bin\System.Web.Http.WebHost.dll
+D:\vsProject\YuPenApi\YuPenApi\bin\System.Web.Mvc.dll
+D:\vsProject\YuPenApi\YuPenApi\bin\System.Web.Optimization.dll
+D:\vsProject\YuPenApi\YuPenApi\bin\System.Web.Razor.dll
+D:\vsProject\YuPenApi\YuPenApi\bin\System.Web.WebPages.Deployment.dll
+D:\vsProject\YuPenApi\YuPenApi\bin\System.Web.WebPages.dll
+D:\vsProject\YuPenApi\YuPenApi\bin\System.Web.WebPages.Razor.dll
+D:\vsProject\YuPenApi\YuPenApi\bin\WebGrease.dll
+D:\vsProject\YuPenApi\YuPenApi\bin\BusinessLayer.pdb
+D:\vsProject\YuPenApi\YuPenApi\bin\DataLayer.pdb
+D:\vsProject\YuPenApi\YuPenApi\bin\DBUtility.pdb
+D:\vsProject\YuPenApi\YuPenApi\bin\Alan.WebApiDoc.pdb
+D:\vsProject\YuPenApi\YuPenApi\bin\Alan.WebApiDoc.xml
+D:\vsProject\YuPenApi\YuPenApi\bin\Newtonsoft.Json.xml
+D:\vsProject\YuPenApi\YuPenApi\bin\System.Net.Http.Formatting.xml
+D:\vsProject\YuPenApi\YuPenApi\bin\System.Web.Http.xml
+D:\vsProject\YuPenApi\YuPenApi\bin\System.Web.Http.WebHost.xml
+D:\vsProject\YuPenApi\YuPenApi\bin\System.Web.Helpers.xml
+D:\vsProject\YuPenApi\YuPenApi\bin\System.Web.Mvc.xml
+D:\vsProject\YuPenApi\YuPenApi\bin\System.Web.Optimization.xml
+D:\vsProject\YuPenApi\YuPenApi\bin\System.Web.Razor.xml
+D:\vsProject\YuPenApi\YuPenApi\bin\System.Web.WebPages.xml
+D:\vsProject\YuPenApi\YuPenApi\bin\System.Web.WebPages.Deployment.xml
+D:\vsProject\YuPenApi\YuPenApi\bin\System.Web.WebPages.Razor.xml
+D:\vsProject\YuPenApi\YuPenApi\bin\Antlr3.Runtime.pdb
+D:\vsProject\YuPenApi\YuPenApi\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+D:\vsProject\YuPenApi\YuPenApi\bin\zh-Hans\System.Web.Helpers.resources.dll
+D:\vsProject\YuPenApi\YuPenApi\bin\zh-Hans\System.Web.Mvc.resources.dll
+D:\vsProject\YuPenApi\YuPenApi\bin\zh-Hans\System.Web.Optimization.resources.dll
+D:\vsProject\YuPenApi\YuPenApi\bin\zh-Hans\System.Web.Razor.resources.dll
+D:\vsProject\YuPenApi\YuPenApi\bin\zh-Hans\System.Web.WebPages.resources.dll
+D:\vsProject\YuPenApi\YuPenApi\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+D:\vsProject\YuPenApi\YuPenApi\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+D:\vsProject\YuPenApi\YuPenApi\obj\Debug\YuPenApi.dll
+D:\vsProject\YuPenApi\YuPenApi\obj\Debug\YuPenApi.pdb
+D:\vsProject\YuPenApi\YuPenApi\bin\Dapper.dll
+D:\vsProject\YuPenApi\YuPenApi\bin\Alan.Authentication.dll
+D:\vsProject\YuPenApi\YuPenApi\bin\Alan.Authentication.pdb
+D:\vsProject\YuPenApi\YuPenApi\bin\Alan.Authentication.xml
+D:\vsProject\YuPenApi\YuPenApi\bin\StackExchange.Redis.dll
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\YuPenApi.dll.config
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\YuPenApi.dll
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\YuPenApi.pdb
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\YuPenApi.XML
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\Alan.Authentication.dll
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\Alan.WebApiDoc.dll
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\Antlr3.Runtime.dll
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\BusinessLayer.dll
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\DataLayer.dll
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\DBUtility.dll
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\Newtonsoft.Json.dll
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\System.Linq.Dynamic.dll
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\System.Net.Http.Formatting.dll
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\System.Web.Helpers.dll
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\System.Web.Http.dll
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\System.Web.Http.WebHost.dll
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\System.Web.Mvc.dll
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\System.Web.Optimization.dll
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\System.Web.Razor.dll
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\System.Web.WebPages.Deployment.dll
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\System.Web.WebPages.dll
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\System.Web.WebPages.Razor.dll
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\WebGrease.dll
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\Dapper.dll
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\StackExchange.Redis.dll
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\BusinessLayer.pdb
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\DataLayer.pdb
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\DBUtility.pdb
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\Alan.Authentication.pdb
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\Alan.Authentication.xml
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\Alan.WebApiDoc.pdb
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\Alan.WebApiDoc.xml
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\Newtonsoft.Json.xml
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\System.Net.Http.Formatting.xml
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\System.Web.Http.xml
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\System.Web.Http.WebHost.xml
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\System.Web.Helpers.xml
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\System.Web.Mvc.xml
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\System.Web.Optimization.xml
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\System.Web.Razor.xml
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\System.Web.WebPages.xml
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\System.Web.WebPages.Deployment.xml
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\System.Web.WebPages.Razor.xml
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\Antlr3.Runtime.pdb
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\zh-Hans\System.Web.Optimization.resources.dll
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\zh-Hans\System.Web.WebPages.resources.dll
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\obj\Debug\YuPenApi.csprojResolveAssemblyReference.cache
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\obj\Debug\YuPenApi.dll
+C:\Users\lenovo\Desktop\YuPenApi\YuPenApi\obj\Debug\YuPenApi.pdb
+E:\YuPenApi 公共 - 副本\YuPenApi\obj\Debug\YuPenApi.csprojResolveAssemblyReference.cache
+E:\YuPenApi 公共 - 副本\YuPenApi\obj\Debug\YuPenApi.dll
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\YuPenApi.dll.config
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\YuPenApi.dll
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\YuPenApi.pdb
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\YuPenApi.XML
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\Alan.Authentication.dll
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\Alan.WebApiDoc.dll
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\Antlr3.Runtime.dll
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\BusinessLayer.dll
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\DataLayer.dll
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\DBUtility.dll
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\Microsoft.Web.Infrastructure.dll
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\Newtonsoft.Json.dll
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\System.Linq.Dynamic.dll
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\System.Net.Http.Formatting.dll
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\System.Web.Helpers.dll
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\System.Web.Http.dll
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\System.Web.Http.WebHost.dll
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\System.Web.Mvc.dll
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\System.Web.Optimization.dll
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\System.Web.Razor.dll
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\System.Web.WebPages.Deployment.dll
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\System.Web.WebPages.dll
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\System.Web.WebPages.Razor.dll
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\WebGrease.dll
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\Dapper.dll
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\StackExchange.Redis.dll
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\BusinessLayer.pdb
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\DataLayer.pdb
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\DBUtility.pdb
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\Alan.Authentication.pdb
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\Alan.Authentication.xml
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\Alan.WebApiDoc.pdb
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\Alan.WebApiDoc.xml
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\Newtonsoft.Json.xml
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\System.Net.Http.Formatting.xml
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\System.Web.Http.xml
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\System.Web.Http.WebHost.xml
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\System.Web.Helpers.xml
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\System.Web.Mvc.xml
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\System.Web.Optimization.xml
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\System.Web.Razor.xml
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\System.Web.WebPages.xml
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\System.Web.WebPages.Deployment.xml
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\System.Web.WebPages.Razor.xml
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\Antlr3.Runtime.pdb
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\zh-Hans\System.Web.Helpers.resources.dll
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\zh-Hans\System.Web.Mvc.resources.dll
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\zh-Hans\System.Web.Optimization.resources.dll
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\zh-Hans\System.Web.Razor.resources.dll
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\zh-Hans\System.Web.WebPages.resources.dll
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+E:\YuPenApi 公共 - 副本\YuPenApi\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+E:\YuPenApi 公共 - 副本\YuPenApi\obj\Debug\YuPenApi.pdb

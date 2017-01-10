@@ -1,0 +1,14 @@
+C:\Users\lenovo\Desktop\YuPenApi\BusinessLayer\bin\Release\BusinessLayer.dll
+C:\Users\lenovo\Desktop\YuPenApi\BusinessLayer\bin\Release\BusinessLayer.pdb
+C:\Users\lenovo\Desktop\YuPenApi\BusinessLayer\bin\Release\Dapper.dll
+C:\Users\lenovo\Desktop\YuPenApi\BusinessLayer\bin\Release\DataLayer.dll
+C:\Users\lenovo\Desktop\YuPenApi\BusinessLayer\bin\Release\DBUtility.dll
+C:\Users\lenovo\Desktop\YuPenApi\BusinessLayer\bin\Release\Newtonsoft.Json.dll
+C:\Users\lenovo\Desktop\YuPenApi\BusinessLayer\bin\Release\StackExchange.Redis.dll
+C:\Users\lenovo\Desktop\YuPenApi\BusinessLayer\bin\Release\System.Linq.Dynamic.dll
+C:\Users\lenovo\Desktop\YuPenApi\BusinessLayer\bin\Release\DataLayer.pdb
+C:\Users\lenovo\Desktop\YuPenApi\BusinessLayer\bin\Release\DBUtility.pdb
+C:\Users\lenovo\Desktop\YuPenApi\BusinessLayer\bin\Release\Newtonsoft.Json.xml
+C:\Users\lenovo\Desktop\YuPenApi\BusinessLayer\obj\Release\BusinessLayer.csprojResolveAssemblyReference.cache
+C:\Users\lenovo\Desktop\YuPenApi\BusinessLayer\obj\Release\BusinessLayer.dll
+C:\Users\lenovo\Desktop\YuPenApi\BusinessLayer\obj\Release\BusinessLayer.pdb

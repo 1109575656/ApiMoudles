@@ -1,0 +1,15 @@
+D:\vsProject\YuPenApi\DataLayer\bin\Debug\DataLayer.dll
+D:\vsProject\YuPenApi\DataLayer\bin\Debug\DataLayer.pdb
+D:\vsProject\YuPenApi\DataLayer\obj\Debug\DataLayer.dll
+D:\vsProject\YuPenApi\DataLayer\obj\Debug\DataLayer.pdb
+D:\vsProject\YuPenApi\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache
+C:\Users\lenovo\Desktop\YuPenApi\DataLayer\bin\Debug\DataLayer.dll
+C:\Users\lenovo\Desktop\YuPenApi\DataLayer\bin\Debug\DataLayer.pdb
+C:\Users\lenovo\Desktop\YuPenApi\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache
+C:\Users\lenovo\Desktop\YuPenApi\DataLayer\obj\Debug\DataLayer.dll
+C:\Users\lenovo\Desktop\YuPenApi\DataLayer\obj\Debug\DataLayer.pdb
+E:\YuPenApi 公共 - 副本\DataLayer\bin\Debug\DataLayer.dll
+E:\YuPenApi 公共 - 副本\DataLayer\bin\Debug\DataLayer.pdb
+E:\YuPenApi 公共 - 副本\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache
+E:\YuPenApi 公共 - 副本\DataLayer\obj\Debug\DataLayer.dll
+E:\YuPenApi 公共 - 副本\DataLayer\obj\Debug\DataLayer.pdb

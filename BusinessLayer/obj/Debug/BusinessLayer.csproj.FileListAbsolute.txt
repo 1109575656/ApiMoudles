@@ -1,0 +1,33 @@
+D:\vsProject\YuPenApi\BusinessLayer\bin\Debug\BusinessLayer.dll
+D:\vsProject\YuPenApi\BusinessLayer\bin\Debug\BusinessLayer.pdb
+D:\vsProject\YuPenApi\BusinessLayer\bin\Debug\DataLayer.dll
+D:\vsProject\YuPenApi\BusinessLayer\bin\Debug\DBUtility.dll
+D:\vsProject\YuPenApi\BusinessLayer\bin\Debug\DataLayer.pdb
+D:\vsProject\YuPenApi\BusinessLayer\bin\Debug\DBUtility.pdb
+D:\vsProject\YuPenApi\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+D:\vsProject\YuPenApi\BusinessLayer\obj\Debug\BusinessLayer.dll
+D:\vsProject\YuPenApi\BusinessLayer\obj\Debug\BusinessLayer.pdb
+D:\vsProject\YuPenApi\BusinessLayer\bin\Debug\Newtonsoft.Json.dll
+D:\vsProject\YuPenApi\BusinessLayer\bin\Debug\Newtonsoft.Json.xml
+C:\Users\lenovo\Desktop\YuPenApi\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\lenovo\Desktop\YuPenApi\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\lenovo\Desktop\YuPenApi\BusinessLayer\bin\Debug\DataLayer.dll
+C:\Users\lenovo\Desktop\YuPenApi\BusinessLayer\bin\Debug\DBUtility.dll
+C:\Users\lenovo\Desktop\YuPenApi\BusinessLayer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\lenovo\Desktop\YuPenApi\BusinessLayer\bin\Debug\DataLayer.pdb
+C:\Users\lenovo\Desktop\YuPenApi\BusinessLayer\bin\Debug\DBUtility.pdb
+C:\Users\lenovo\Desktop\YuPenApi\BusinessLayer\bin\Debug\Newtonsoft.Json.xml
+C:\Users\lenovo\Desktop\YuPenApi\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+C:\Users\lenovo\Desktop\YuPenApi\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\lenovo\Desktop\YuPenApi\BusinessLayer\obj\Debug\BusinessLayer.pdb
+E:\YuPenApi 公共 - 副本\BusinessLayer\bin\Debug\BusinessLayer.dll
+E:\YuPenApi 公共 - 副本\BusinessLayer\bin\Debug\BusinessLayer.pdb
+E:\YuPenApi 公共 - 副本\BusinessLayer\bin\Debug\DataLayer.dll
+E:\YuPenApi 公共 - 副本\BusinessLayer\bin\Debug\DBUtility.dll
+E:\YuPenApi 公共 - 副本\BusinessLayer\bin\Debug\Newtonsoft.Json.dll
+E:\YuPenApi 公共 - 副本\BusinessLayer\bin\Debug\DataLayer.pdb
+E:\YuPenApi 公共 - 副本\BusinessLayer\bin\Debug\DBUtility.pdb
+E:\YuPenApi 公共 - 副本\BusinessLayer\bin\Debug\Newtonsoft.Json.xml
+E:\YuPenApi 公共 - 副本\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+E:\YuPenApi 公共 - 副本\BusinessLayer\obj\Debug\BusinessLayer.dll
+E:\YuPenApi 公共 - 副本\BusinessLayer\obj\Debug\BusinessLayer.pdb

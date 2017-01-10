@@ -1,0 +1,295 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Alan.Authentication</name>
+    </assembly>
+    <members>
+        <member name="T:Alan.Authentication.AuthModule">
+            <summary>
+            HttpModule
+            </summary>
+        </member>
+        <member name="M:Alan.Authentication.AuthModule.Context_AuthenticateRequest(System.Object,System.EventArgs)">
+            <summary>
+            替换HttpContext.Current.User实现
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:Alan.Authentication.AuthUtils">
+            <summary>
+             Alan.Authentication 实用方法
+            </summary>
+        </member>
+        <member name="M:Alan.Authentication.AuthUtils.InjectAuth(Alan.Authentication.Core.IAuthentication)">
+            <summary>
+            修改默认 AlanAuthentication 实现
+            </summary>
+            <param name="auth"></param>
+        </member>
+        <member name="T:Alan.Authentication.Core.AuthTicket`1">
+            <summary>
+            认证票据
+            </summary>
+            <typeparam name="T">用户数据类型</typeparam>
+        </member>
+        <member name="P:Alan.Authentication.Core.AuthTicket`1.UserId">
+            <summary>
+            用户标识
+            </summary>
+        </member>
+        <member name="P:Alan.Authentication.Core.AuthTicket`1.Roles">
+            <summary>
+            用户角色
+            </summary>
+        </member>
+        <member name="P:Alan.Authentication.Core.AuthTicket`1.Data">
+            <summary>
+            用户数据
+            </summary>
+        </member>
+        <member name="T:Alan.Authentication.Core.IAuthentication">
+            <summary>
+            IAuthentication接口
+            </summary>
+        </member>
+        <member name="M:Alan.Authentication.Core.IAuthentication.SignIn(System.Web.HttpResponse,System.String,System.Int32,System.String[],System.Object)">
+            <summary>
+            设置登录时设置的票据并返回
+            </summary>
+            <param name="response">Http响应</param>
+            <param name="uid">用户标识</param>
+            <param name="roles">用户拥有的角色</param>
+            <param name="days">有效时间</param>
+            <param name="userData">用户附加数据(不需要可以设置成null)</param>
+            <returns>认证票据</returns>
+        </member>
+        <member name="M:Alan.Authentication.Core.IAuthentication.GetUid(System.Web.HttpRequest)">
+            <summary>
+            获取用户标识
+            </summary>
+            <param name="request">Http请求</param>
+            <returns>用户标识</returns>
+        </member>
+        <member name="M:Alan.Authentication.Core.IAuthentication.GetUserData``1(System.Web.HttpRequest)">
+            <summary>
+            获取用户附加数据
+            </summary>
+            <typeparam name="T">用户附加数据类型</typeparam>
+            <param name="request">Http请求</param>
+            <returns>用户附加数据</returns>
+        </member>
+        <member name="M:Alan.Authentication.Core.IAuthentication.SignOut(System.Web.HttpResponse)">
+            <summary>
+            退出登录
+            </summary>
+            <param name="response">HttpResponse</param>
+        </member>
+        <member name="M:Alan.Authentication.Core.IAuthentication.IsAuthenticated(System.Web.HttpRequest)">
+            <summary>
+            用户是否已认证
+            </summary>
+            <param name="request">Http请求</param>
+            <returns>是否已认证</returns>
+        </member>
+        <member name="M:Alan.Authentication.Core.IAuthentication.IsInRole(System.Web.HttpRequest,System.String)">
+            <summary>
+            用户是否拥有某个角色
+            根据具体需求可以不实现这个方法
+            </summary>
+            <param name="request">HttpRequest</param>
+            <param name="roleName">角色名称</param>
+            <returns>返回是否拥有某个角色</returns>
+        </member>
+        <member name="M:Alan.Authentication.Core.IAuthentication.GetTicket``1(System.Web.HttpRequest)">
+            <summary>
+            获取票据
+            </summary>
+            <typeparam name="T">用户附加数据类型</typeparam>
+            <param name="request">HttpRequest</param>
+            <returns>登陆时设置的票据</returns>
+        </member>
+        <member name="T:Alan.Authentication.Implementation.FormsAuthAuthentication">
+            <summary>
+            依赖 FormsAuthentication 的实现
+            </summary>
+        </member>
+        <member name="M:Alan.Authentication.Implementation.FormsAuthAuthentication.GetTicket``1(System.Web.HttpRequest)">
+            <summary>
+            获取认证Cookie值
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Alan.Authentication.Implementation.FormsAuthAuthentication.SignIn(System.Web.HttpResponse,System.String,System.Int32,System.String[],System.Object)">
+            <summary>
+            获取登录时设置的票据
+            </summary>
+            <param name="response">Http响应</param>
+            <param name="uid">用户标识</param>
+            <param name="days">有效时间</param>
+            <param name="data">用户附加数据</param>
+            <returns>认证票据</returns>
+        </member>
+        <member name="M:Alan.Authentication.Implementation.FormsAuthAuthentication.GetUid(System.Web.HttpRequest)">
+            <summary>
+            获取用户标识
+            </summary>
+            <param name="request">Http请求</param>
+            <returns>用户标识</returns>
+        </member>
+        <member name="M:Alan.Authentication.Implementation.FormsAuthAuthentication.GetUserData``1(System.Web.HttpRequest)">
+            <summary>
+            获取用户附加数据
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Alan.Authentication.Implementation.FormsAuthAuthentication.SignOut(System.Web.HttpResponse)">
+            <summary>
+            退出登录
+            </summary>
+            <param name="response"></param>
+        </member>
+        <member name="M:Alan.Authentication.Implementation.FormsAuthAuthentication.IsAuthenticated(System.Web.HttpRequest)">
+            <summary>
+            用户是否已认证
+            </summary>
+            <param name="request">Http请求</param>
+            <returns>是否已认证</returns>
+        </member>
+        <member name="M:Alan.Authentication.Implementation.FormsAuthAuthentication.IsInRole(System.Web.HttpRequest,System.String)">
+            <summary>
+            用户是否拥有某个角色
+            根据具体需求可以不实现这个方法
+            </summary>
+            <param name="request">HttpRequest</param>
+            <param name="roleName">角色名称</param>
+            <returns>返回是否拥有某个角色</returns>
+        </member>
+        <member name="P:Alan.Authentication.Implementation.NormalCookieAuthentication.CookieName">
+            <summary>
+            Cookie的名字
+            </summary>
+        </member>
+        <member name="P:Alan.Authentication.Implementation.NormalCookieAuthentication.AesKey">
+            <summary>
+            AES加密的密钥 16字节长度
+            优先从配置节[Authentication-AESKey]获取.
+            </summary>
+        </member>
+        <member name="M:Alan.Authentication.Implementation.NormalCookieAuthentication.GetTicket``1(System.Web.HttpRequest)">
+            <summary>
+            获取票据
+            </summary>
+            <typeparam name="T">用户附加数据类型</typeparam>
+            <param name="request">HttpRequest</param>
+            <returns>登陆时设置的票据</returns>
+        </member>
+        <member name="M:Alan.Authentication.Implementation.NormalCookieAuthentication.SignIn(System.Web.HttpResponse,System.String,System.Int32,System.String[],System.Object)">
+            <summary>
+            设置登录时设置的票据并返回
+            </summary>
+            <param name="response">Http响应</param>
+            <param name="uid">用户标识</param>
+            <param name="roles">用户拥有的角色</param>
+            <param name="days">有效时间</param>
+            <param name="userData">用户附加数据(不需要可以设置成null)</param>
+            <returns>认证票据</returns>
+        </member>
+        <member name="M:Alan.Authentication.Implementation.NormalCookieAuthentication.GetUid(System.Web.HttpRequest)">
+            <summary>
+            获取用户标识
+            </summary>
+            <param name="request">Http请求</param>
+            <returns>用户标识</returns>
+        </member>
+        <member name="M:Alan.Authentication.Implementation.NormalCookieAuthentication.GetUserData``1(System.Web.HttpRequest)">
+            <summary>
+            获取用户附加数据
+            </summary>
+            <typeparam name="T">用户附加数据类型</typeparam>
+            <param name="request">Http请求</param>
+            <returns>用户附加数据</returns>
+        </member>
+        <member name="M:Alan.Authentication.Implementation.NormalCookieAuthentication.SignOut(System.Web.HttpResponse)">
+            <summary>
+            退出登录
+            </summary>
+            <param name="response">HttpResponse</param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Alan.Authentication.Implementation.NormalCookieAuthentication.IsAuthenticated(System.Web.HttpRequest)" -->
+        <member name="M:Alan.Authentication.Implementation.NormalCookieAuthentication.IsInRole(System.Web.HttpRequest,System.String)">
+            <summary>
+            用户是否拥有某个角色
+            根据具体需求可以不实现这个方法
+            </summary>
+            <param name="roleName">角色名称</param>
+            <returns>返回是否拥有某个角色</returns>
+        </member>
+        <member name="T:Alan.Authentication.Modules.AuthIdentity">
+            <summary>
+            系统IIdentity实现
+            </summary>
+        </member>
+        <member name="F:Alan.Authentication.Modules.AuthIdentity._uid">
+            <summary>
+            用户表示
+            </summary>
+        </member>
+        <member name="P:Alan.Authentication.Modules.AuthIdentity.IsAuthenticated">
+            <summary>
+            是否已认证
+            </summary>
+        </member>
+        <member name="T:Alan.Authentication.Modules.AuthPrincipal">
+            <summary>
+            系统IPrincipal实现
+            </summary>
+        </member>
+        <member name="F:Alan.Authentication.Modules.AuthPrincipal._uid">
+            <summary>
+            用户标识
+            </summary>
+        </member>
+        <member name="M:Alan.Authentication.Modules.AuthPrincipal.#ctor(System.Web.HttpRequest)">
+            <summary>
+            初始化
+            </summary>
+            <param name="req"></param>
+        </member>
+        <member name="M:Alan.Authentication.Modules.AuthPrincipal.IsInRole(System.String)">
+            <summary>
+            用户是否拥有某个角色
+            </summary>
+            <param name="role"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Alan.Authentication.Utils.SecurityUtils">
+            <summary>
+            加/解密实用类
+            </summary>
+        </member>
+        <member name="M:Alan.Authentication.Utils.SecurityUtils.AesEncrypt(System.String,System.Byte[])">
+            <summary>
+            AES加密
+            </summary>
+            <param name="data">待加密数据</param>
+            <param name="key">密钥</param>
+            <returns>密文字节数组</returns>
+        </member>
+        <member name="M:Alan.Authentication.Utils.SecurityUtils.AesDecrypt(System.Byte[],System.Byte[])">
+            <summary>
+            AES解密
+            </summary>
+            <param name="data">待解密字节数组</param>
+            <param name="key">密钥</param>
+            <returns>解密后的字符串</returns>
+        </member>
+        <member name="T:Alan.Authentication.Utils.SerializeUtils">
+            <summary>
+            序列化实用类
+            </summary>
+        </member>
+    </members>
+</doc>

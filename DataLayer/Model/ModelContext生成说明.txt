@@ -1,0 +1,3 @@
+1.打开cmd：
+2.cd C:\Program Files (x86)\Microsoft SDKs\Windows\v8.1A\bin\NETFX 4.5.1 Tools  或者添加到环境变量中
+3.cmd sqlmetal /conn:"server=.或者ip;database=数据库名称;User Id=sa;pwd=密码" /code:E:\ModelContext.cs /namespace:命名空间 /context:ModelContext

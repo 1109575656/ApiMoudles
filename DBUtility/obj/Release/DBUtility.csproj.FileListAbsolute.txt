@@ -1,0 +1,8 @@
+C:\Users\lenovo\Desktop\YuPenApi\DBUtility\bin\Release\DBUtility.dll
+C:\Users\lenovo\Desktop\YuPenApi\DBUtility\bin\Release\DBUtility.pdb
+C:\Users\lenovo\Desktop\YuPenApi\DBUtility\bin\Release\Newtonsoft.Json.dll
+C:\Users\lenovo\Desktop\YuPenApi\DBUtility\bin\Release\StackExchange.Redis.dll
+C:\Users\lenovo\Desktop\YuPenApi\DBUtility\bin\Release\Newtonsoft.Json.xml
+C:\Users\lenovo\Desktop\YuPenApi\DBUtility\obj\Release\DBUtility.csprojResolveAssemblyReference.cache
+C:\Users\lenovo\Desktop\YuPenApi\DBUtility\obj\Release\DBUtility.dll
+C:\Users\lenovo\Desktop\YuPenApi\DBUtility\obj\Release\DBUtility.pdb

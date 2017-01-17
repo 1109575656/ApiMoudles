@@ -6,7 +6,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>D:\YuPenApi发布</_PublishTargetUrl>
+    <_PublishTargetUrl>E:\发布\EncryptApi</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="ApiUI/Document/document.html">
@@ -60,6 +60,9 @@
     <File Include="ApiUI/Document/TestApi.html">
       <publishTime>10/10/2016 14:39:04</publishTime>
     </File>
+    <File Include="App_Data/Api.XML">
+      <publishTime>01/17/2017 15:24:01</publishTime>
+    </File>
     <File Include="App_Data/YuPenApi.XML">
       <publishTime>10/18/2016 14:42:29</publishTime>
     </File>
@@ -72,23 +75,26 @@
     <File Include="bin/Antlr3.Runtime.dll">
       <publishTime>10/10/2016 13:57:26</publishTime>
     </File>
+    <File Include="bin/Api.dll">
+      <publishTime>01/17/2017 15:24:06</publishTime>
+    </File>
     <File Include="bin/App_global.asax.compiled">
-      <publishTime>10/18/2016 14:42:39</publishTime>
+      <publishTime>01/17/2017 15:24:09</publishTime>
     </File>
     <File Include="bin/App_global.asax.dll">
-      <publishTime>10/18/2016 14:42:39</publishTime>
+      <publishTime>01/17/2017 15:24:09</publishTime>
     </File>
     <File Include="bin/BusinessLayer.dll">
-      <publishTime>10/18/2016 14:42:35</publishTime>
+      <publishTime>01/17/2017 15:07:03</publishTime>
     </File>
     <File Include="bin/Dapper.dll">
       <publishTime>08/01/2016 16:46:18</publishTime>
     </File>
     <File Include="bin/DataLayer.dll">
-      <publishTime>10/18/2016 13:57:34</publishTime>
+      <publishTime>01/10/2017 17:45:24</publishTime>
     </File>
     <File Include="bin/DBUtility.dll">
-      <publishTime>10/18/2016 13:57:34</publishTime>
+      <publishTime>01/17/2017 15:07:02</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
       <publishTime>10/10/2016 10:12:11</publishTime>
@@ -171,6 +177,9 @@
     <File Include="Content/Site.css">
       <publishTime>10/10/2016 14:12:42</publishTime>
     </File>
+    <File Include="document.html">
+      <publishTime>01/11/2017 10:00:56</publishTime>
+    </File>
     <File Include="favicon.ico">
       <publishTime>10/10/2016 14:12:42</publishTime>
     </File>
@@ -190,7 +199,7 @@
       <publishTime>10/10/2016 17:09:19</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>10/18/2016 14:42:36</publishTime>
+      <publishTime>01/17/2017 15:24:07</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>10/10/2016 14:12:43</publishTime>
@@ -226,13 +235,13 @@
       <publishTime>10/10/2016 14:12:42</publishTime>
     </File>
     <File Include="Views/Web.config">
-      <publishTime>10/10/2016 14:12:42</publishTime>
+      <publishTime>01/10/2017 15:58:34</publishTime>
     </File>
     <File Include="Views/_ViewStart.cshtml">
       <publishTime>10/10/2016 14:12:42</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>10/18/2016 13:57:38</publishTime>
+      <publishTime>01/17/2017 15:07:04</publishTime>
     </File>
   </ItemGroup>
 </Project>

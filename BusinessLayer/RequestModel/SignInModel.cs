@@ -11,6 +11,7 @@ namespace BusinessLayer.RequestModel
     /// </summary>
     public  class SignInModel
     {
+        //{"LoginName":"账号","Password":"密码"}
         public string LoginName { get; set; }
 
         public string Password { get; set; }

@@ -7,6 +7,8 @@ using System.Web;
 using System.Web.Http.Filters;
 using System.Web.Http.Results;
 using DataLayer.Model;
+using DBUtility;
+using System.Text;
 
 namespace Api.Log
 {
@@ -26,7 +28,7 @@ namespace Api.Log
             try
             {
                 //1KB
-                if (req.TotalBytes <= 1024 * 1024 * 10)
+                if (req.TotalBytes <= 1024 * 1024)
                 {
                     using (StreamReader reader = new StreamReader(req.InputStream))
                     {
@@ -41,14 +43,36 @@ namespace Api.Log
             var customerId = System.Web.HttpContext.Current.User.Identity.Name; //当前登录用户
             var url = actionContext.Request.RequestUri.AbsoluteUri; //接口绝对路径
             var httpMethod = actionContext.Request.Method.Method; //请求方法 Get/Post
-            //....等等 可以记录到数据库，txt等
+            var ip = req.UserHostAddress; //ip
+            var dns = req.UserHostName; //dns
             string version = "1.0"; //版本
+            //....等等 可以记录到数据库，txt等
+            string path = HttpContext.Current.Server.MapPath("~/ApiLog/RequestLog" + DateTime.Now.ToString("yyyy-MM-dd") + ".txt");
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("请求：");
+            sb.AppendLine("当前登录用户：" + (string.IsNullOrEmpty(customerId) ? "未登录" : customerId) );
+            sb.AppendLine("接口绝对路径：" + url);
+            sb.AppendLine("请求方法：" + httpMethod);
+            sb.AppendLine("IP：" + ip);
+            sb.AppendLine("DNS：" + dns);
+            sb.AppendLine("version：" + version);
+            ApiHelper.FileWrite(path, sb.ToString());
         }
          //响应日志
         public override void OnActionExecuted(HttpActionExecutedContext actionExecutedContext)
         {
+            string path = HttpContext.Current.Server.MapPath("~/ApiLog/RequestLog" + DateTime.Now.ToString("yyyy-MM-dd") + ".txt");
             var statu = (int)actionExecutedContext.Response.StatusCode; //返回状态码
-            string result = actionExecutedContext.Response.Content.ReadAsStringAsync().Result; //响应结果
+            if (statu == 500)
+            {
+                ApiHelper.FileWrite(path, "内部服务器错误");
+            }
+            else { 
+                string result = actionExecutedContext.Response.Content.ReadAsStringAsync().Result; //响应结果
+                StringBuilder sb = new StringBuilder();
+                sb.AppendLine("响应：" + result);
+                ApiHelper.FileWrite(path, sb.ToString());
+            }
         }
     }
 }

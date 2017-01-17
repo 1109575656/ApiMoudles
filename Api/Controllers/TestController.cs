@@ -56,7 +56,17 @@ namespace Api.Controllers
             //[frombody]：没有key，key为"",value为web api方法参数/string,json...
             return new ReturnMessage(ReturnMsgStatuEnum.Success, name.name.ToString(), name.name);
         }
-
+        /// <summary>
+        /// 测试Get请求
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("TestGetResponse")]
+        [AllowAnonymous]
+        public ReturnMessage TestGetResponse()
+        {
+            return new ReturnMessage(ReturnMsgStatuEnum.Success,"成功","");
+        }
         /// <summary>
         /// 测试非对称加密 
         /// </summary>
@@ -144,9 +154,9 @@ namespace Api.Controllers
             {
                 cookie.HttpOnly = true;
                 cookie.Expires = DateTime.Now.AddDays(-1);
-                cookie.Domain = ConfigHelper.Domain;
                 cookie.Secure = FormsAuthentication.RequireSSL;
-                cookie.Path = ConfigHelper.SSOPath;
+                //cookie.Domain = ConfigHelper.Domain;
+                //cookie.Path = ConfigHelper.SSOPath;
                 cookie.Values.Clear();
                 HttpContext.Current.Response.Cookies.Add(cookie);
             }

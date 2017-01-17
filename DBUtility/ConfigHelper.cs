@@ -12,19 +12,13 @@ namespace DBUtility
     /// </summary>
     public class ConfigHelper
     {
-        public static string SSOPath
-        {
-            get
-            {
-                return ConfigurationManager.AppSettings["SSOPath"];
-            }
-        }
-        public static string Domain
-        {
-            get
-            {
-                return ConfigurationManager.AppSettings["Domain"];
-            }
+        /// <summary>
+        /// 获取配置文件指定节点
+        /// </summary>
+        /// <param name="nodeKey"></param>
+        /// <returns></returns>
+        public static string GetNodeByName(string nodeKey) {
+            return ConfigurationManager.AppSettings[nodeKey];
         }
     }
 }

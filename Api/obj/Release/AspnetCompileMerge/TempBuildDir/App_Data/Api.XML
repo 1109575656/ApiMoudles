@@ -1,88 +1,85 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>YuPenApi</name>
+        <name>Api</name>
     </assembly>
     <members>
-        <member name="M:YuPenApi.Controllers.BaseApiControl`2.#ctor(`1)">
+        <member name="M:Api.Controllers.BaseApiControl`2.#ctor(`1)">
             <summary>
             实例化仓储
             </summary>
             <param name="rep"></param>
         </member>
-        <member name="P:YuPenApi.Controllers.BaseApiControl`2.Repository">
+        <member name="P:Api.Controllers.BaseApiControl`2.Repository">
             <summary>
             接口当前仓储
             </summary>
         </member>
-        <member name="P:YuPenApi.Controllers.BaseApiControl`2.IdentityId">
+        <member name="P:Api.Controllers.BaseApiControl`2.IdentityId">
             <summary>
             当前用户ID，NULL为未登陆
             </summary>
         </member>
-        <member name="T:YuPenApi.Controllers.TestController">
+        <member name="T:Api.Controllers.TestController">
             <summary>
             产品中心
             </summary>
         </member>
-        <member name="M:YuPenApi.Controllers.TestController.SymEncrypt(YuPenApi.Helper.Decrypt{BusinessLayer.ViewModel.SymEncryptModel})">
+        <member name="M:Api.Controllers.TestController.SymEncrypt(Api.Helper.Decrypt{BusinessLayer.ViewModel.SymEncryptModel})">
             <summary>
             测试Post请求（对称加密）
             </summary>
             <param name="test">{"Id":1,"Name":"123"}</param>
             <returns></returns>
         </member>
-        <member name="M:YuPenApi.Controllers.TestController.AsymEncrypt(BusinessLayer.ViewModel.AsymEncryptModel)">
+        <member name="M:Api.Controllers.TestController.TestGetResponse">
+            <summary>
+            测试Get请求
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.TestController.AsymEncrypt(BusinessLayer.ViewModel.AsymEncryptModel)">
             <summary>
             测试非对称加密 
             </summary>
-            <param name="result">{"result":"加密{"Id":1,"Name":"哈哈"}"}</param>
+            <param name="req">{"Name":"张三","Age":"12","Timestamp":"636196450812777599","Sign":"eAEgBKbAAG0L8aLRNt0QVcgR/uBQ2+UgPr9hJFyeWhE5OWuGfSZEV696um2uJs7qjzS2umlBUF9TYx2lphI6/VUjiSBqlTX0b8kfL83d/5wzmM/r5GIGkReRZUoYQnwn8Be1FK+k8H2dMtrUuOepp43KSTYRGmfMW9+3RXoM410="}</param>
             <returns></returns>
         </member>
-        <member name="M:YuPenApi.Controllers.TestController.GetData">
+        <member name="M:Api.Controllers.TestController.GetData">
             <summary>
             获取数据
             </summary>
             <returns></returns>
         </member>
-        <member name="M:YuPenApi.Controllers.TestController.SignIn(BusinessLayer.RequestModel.SignInModel)">
+        <member name="M:Api.Controllers.TestController.SignIn(BusinessLayer.RequestModel.SignInModel)">
             <summary>
             登录
             </summary>
             <returns></returns>
         </member>
-        <member name="M:YuPenApi.Controllers.TestController.SignOut">
+        <member name="M:Api.Controllers.TestController.SignOut">
             <summary>
             退出登录
             </summary>
             <returns></returns>
         </member>
-        <member name="T:YuPenApi.Helper.Decrypt`1">
+        <member name="T:Api.Helper.Decrypt`1">
             <summary>
             解密
             </summary>
             <typeparam name="T"></typeparam>
         </member>
-        <member name="T:YuPenApi.Log.ApiRecordLogAttribute">
+        <member name="T:Api.Log.ApiRecordLogAttribute">
             <summary>
             请求响应日志
             </summary>
         </member>
-        <member name="T:YuPenApi.Log.AuthorityAttribute">
+        <member name="T:Api.Log.AuthorityAttribute">
             <summary>
             权限控制
             </summary>
         </member>
-        <member name="M:YuPenApi.Log.ExceptionLogAttribute.FileWrite(System.String,System.String,System.Boolean)">
-            <summary>
-            写入文件,不存在则创建文件
-            </summary>
-            <param name="fileName">文件绝对路径</param>
-            <param name="content">写入内容</param>
-            <param name="IsAppend">true：追加 false：覆盖</param>
-            <returns>true：成功 false：失败</returns>
-        </member>
-        <member name="T:YuPenApi.ApiUI.ApiDocumentationController">
+        <member name="T:Api.ApiUI.ApiDocumentationController">
             <summary>
             接口文档
             </summary>

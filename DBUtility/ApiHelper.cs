@@ -465,5 +465,28 @@ namespace DBUtility
         }
 
         #endregion
+
+        /// <summary>
+        /// 写入文件,不存在则创建文件
+        /// </summary>
+        /// <param name="fileName">文件绝对路径</param>
+        /// <param name="content">写入内容</param>
+        /// <param name="IsAppend">true：追加 false：覆盖</param>
+        /// <returns>true：成功 false：失败</returns>
+        public static bool FileWrite(string fileName, string content, bool IsAppend = true)
+        {
+            try
+            {
+                using (StreamWriter sw = new StreamWriter(fileName, IsAppend, Encoding.Default))
+                {
+                    sw.Write(content);
+                }
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
     }
 }

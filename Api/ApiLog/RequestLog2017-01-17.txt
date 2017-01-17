@@ -1,0 +1,16 @@
+请求：
+当前登录用户：http://localhost:8282/Api/Test/SymEncrypt
+接口绝对路径：11429
+请求方法：POST
+IP：::1
+DNS：::1
+version：1.0
+响应：{"Statu":1,"Remarks":"参数不得为空！","Data":null}
+请求：
+当前登录用户：http://localhost:8282/Api/Test/SignIn
+接口绝对路径：11429
+请求方法：POST
+IP：::1
+DNS：::1
+version：1.0
+响应：{"Statu":0,"Remarks":"登录成功","Data":""}

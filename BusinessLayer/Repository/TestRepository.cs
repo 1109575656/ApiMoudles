@@ -48,8 +48,8 @@ namespace BusinessLayer.Repository
                     HttpCookie cookie = new HttpCookie(FormsAuthentication.FormsCookieName, cookieValue);
                     cookie.HttpOnly = true;
                     cookie.Secure = FormsAuthentication.RequireSSL;
-                    cookie.Domain = ConfigHelper.Domain;
-                    cookie.Path = ConfigHelper.SSOPath;
+                    //cookie.Domain = ConfigHelper.Domain;
+                    //cookie.Path = ConfigHelper.SSOPath;
                     //cookie.Domain = FormsAuthentication.CookieDomain;
                     //cookie.Path = FormsAuthentication.FormsCookiePath;
                     HttpContext context = HttpContext.Current;

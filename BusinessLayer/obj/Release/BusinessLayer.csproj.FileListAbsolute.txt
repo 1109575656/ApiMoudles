@@ -12,3 +12,17 @@ C:\Users\lenovo\Desktop\YuPenApi\BusinessLayer\bin\Release\Newtonsoft.Json.xml
 C:\Users\lenovo\Desktop\YuPenApi\BusinessLayer\obj\Release\BusinessLayer.csprojResolveAssemblyReference.cache
 C:\Users\lenovo\Desktop\YuPenApi\BusinessLayer\obj\Release\BusinessLayer.dll
 C:\Users\lenovo\Desktop\YuPenApi\BusinessLayer\obj\Release\BusinessLayer.pdb
+E:\Api加密\BusinessLayer\bin\Release\BusinessLayer.dll
+E:\Api加密\BusinessLayer\bin\Release\BusinessLayer.pdb
+E:\Api加密\BusinessLayer\bin\Release\Dapper.dll
+E:\Api加密\BusinessLayer\bin\Release\DataLayer.dll
+E:\Api加密\BusinessLayer\bin\Release\DBUtility.dll
+E:\Api加密\BusinessLayer\bin\Release\Newtonsoft.Json.dll
+E:\Api加密\BusinessLayer\bin\Release\StackExchange.Redis.dll
+E:\Api加密\BusinessLayer\bin\Release\System.Linq.Dynamic.dll
+E:\Api加密\BusinessLayer\bin\Release\DataLayer.pdb
+E:\Api加密\BusinessLayer\bin\Release\DBUtility.pdb
+E:\Api加密\BusinessLayer\bin\Release\Newtonsoft.Json.xml
+E:\Api加密\BusinessLayer\obj\Release\BusinessLayer.csprojResolveAssemblyReference.cache
+E:\Api加密\BusinessLayer\obj\Release\BusinessLayer.dll
+E:\Api加密\BusinessLayer\obj\Release\BusinessLayer.pdb

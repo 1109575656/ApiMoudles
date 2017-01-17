@@ -6,3 +6,11 @@ C:\Users\lenovo\Desktop\YuPenApi\DBUtility\bin\Release\Newtonsoft.Json.xml
 C:\Users\lenovo\Desktop\YuPenApi\DBUtility\obj\Release\DBUtility.csprojResolveAssemblyReference.cache
 C:\Users\lenovo\Desktop\YuPenApi\DBUtility\obj\Release\DBUtility.dll
 C:\Users\lenovo\Desktop\YuPenApi\DBUtility\obj\Release\DBUtility.pdb
+E:\Api加密\DBUtility\bin\Release\DBUtility.dll
+E:\Api加密\DBUtility\bin\Release\DBUtility.pdb
+E:\Api加密\DBUtility\bin\Release\Newtonsoft.Json.dll
+E:\Api加密\DBUtility\bin\Release\StackExchange.Redis.dll
+E:\Api加密\DBUtility\bin\Release\Newtonsoft.Json.xml
+E:\Api加密\DBUtility\obj\Release\DBUtility.csprojResolveAssemblyReference.cache
+E:\Api加密\DBUtility\obj\Release\DBUtility.dll
+E:\Api加密\DBUtility\obj\Release\DBUtility.pdb

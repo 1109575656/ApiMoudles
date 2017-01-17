@@ -32,6 +32,12 @@
             <param name="test">{"Id":1,"Name":"123"}</param>
             <returns></returns>
         </member>
+        <member name="M:Api.Controllers.TestController.TestGetResponse">
+            <summary>
+            测试Get请求
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:Api.Controllers.TestController.AsymEncrypt(BusinessLayer.ViewModel.AsymEncryptModel)">
             <summary>
             测试非对称加密 
@@ -72,15 +78,6 @@
             <summary>
             权限控制
             </summary>
-        </member>
-        <member name="M:Api.Log.ExceptionLogAttribute.FileWrite(System.String,System.String,System.Boolean)">
-            <summary>
-            写入文件,不存在则创建文件
-            </summary>
-            <param name="fileName">文件绝对路径</param>
-            <param name="content">写入内容</param>
-            <param name="IsAppend">true：追加 false：覆盖</param>
-            <returns>true：成功 false：失败</returns>
         </member>
         <member name="T:Api.ApiUI.ApiDocumentationController">
             <summary>

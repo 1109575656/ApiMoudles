@@ -20,23 +20,15 @@
             当前用户ID，NULL为未登陆
             </summary>
         </member>
+        <member name="T:Api.Controllers.TestAuthenticationController">
+            <summary>
+            测试身份认证和授权
+            </summary>
+        </member>
         <member name="T:Api.Controllers.TestController">
             <summary>
             产品中心
             </summary>
-        </member>
-        <member name="M:Api.Controllers.TestController.SymEncrypt(Api.Helper.Decrypt{BusinessLayer.ViewModel.SymEncryptModel})">
-            <summary>
-            测试Post请求（对称加密）
-            </summary>
-            <param name="test">{"Id":1,"Name":"123"}</param>
-            <returns></returns>
-        </member>
-        <member name="M:Api.Controllers.TestController.TestGetResponse">
-            <summary>
-            测试Get请求
-            </summary>
-            <returns></returns>
         </member>
         <member name="M:Api.Controllers.TestController.AsymEncrypt(BusinessLayer.ViewModel.AsymEncryptModel)">
             <summary>
@@ -61,6 +53,43 @@
             <summary>
             退出登录
             </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Controllers.TestNotEncryptController">
+            <summary>
+            测试不用加密 and 不用登陆 的方法
+            </summary>
+        </member>
+        <member name="M:Api.Controllers.TestNotEncryptController.TestGetResponse">
+            <summary>
+            测试Get请求
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.TestNotEncryptController.TestPostResponse(BusinessLayer.ViewModel.SymEncryptModel)">
+            <summary>
+            测试Post请求多个参数（不用加密）
+            </summary>
+            <param name="req">{"Id":"1","Name":"***"}</param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.TestNotEncryptController.TestStringParameter(System.Object)">
+            <summary>
+            测试POST一个参数
+            </summary>
+            <param name="name">{"name":"xx"}</param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Controllers.TestSymmetricController">
+            <summary>
+            测试DES对称加密
+            </summary>
+        </member>
+        <member name="M:Api.Controllers.TestSymmetricController.SymEncrypt(Api.Helper.Decrypt{BusinessLayer.ViewModel.SymEncryptModel})">
+            <summary>
+            测试Post请求（对称加密）
+            </summary>
+            <param name="test">{"Id":1,"Name":"123"}</param>
             <returns></returns>
         </member>
         <member name="T:Api.Helper.Decrypt`1">

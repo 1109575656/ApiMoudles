@@ -21,7 +21,7 @@ namespace Api.Controllers
     /// <summary>
     /// 产品中心
     /// </summary>
-    [RoutePrefix("Api/Test")]
+    [RoutePrefix("V1/Test")]
     [Authorize]
     public class TestController : BaseApiControl<Cj_Customer, ITestRepository>
     {
@@ -35,38 +35,8 @@ namespace Api.Controllers
         public TestController() : base(new TestRepository()) { }
         private string privateKey = @"<RSAKeyValue><Modulus>trb7takt7C/wZALmO4Yy17yzjd6/MxCzOSYfBd0dHK6L1SYEgzhGldkSA4+sUeYwn3xqZe8vvRc8dzV0xsD/FtUQTpTrH7wnSgBmQKZ5UxdFwNIZWHWcR9YK43ilkA/2siRiQKNFLOPsOF0zKC5u+ir19bcQX2s1J1sVzImId/E=</Modulus><Exponent>AQAB</Exponent><P>5gaoGDbMYaSyAbkhYBW9FPv0EyxHw3c0AMEBTCDwrSTjrSil7svqBCXQrzwEFs2u+aICpR7yxAsd/kpQTdH+aw==</P><Q>y1i0b0nQWS4zp5B0FrggMaLSIZD3j4FUCb013T8gMJoob+hqXuxCtDxUk8Wa2HGwBxfjWoYAYkPeTGsoPtFCEw==</Q><DP>vdLydwEJyu6B44AmdceawS1m70eUdU7ywEiGTI/GbexKYwRvYtAub3vRajrp2POmGOXErwUKLBRMjSRAfufzvw==</DP><DQ>pbp9DDqnoRdjqAy2YJHeQzYFdq/05DOub2WTUeeR76qkjFhq4URDNSv6bpldk0xM/+r7NBsEkxHnSncHTPM1mw==</DQ><InverseQ>BF9Wtqn8sn4dJH9qSWQbWb7SFyexmAd8IewHQLW49GgXT3Ch/BLYjeIaI3XeieSPKfZXmddfz0+nbYf2RcNasQ==</InverseQ><D>DNgaI7AL4WGRVYZ6ps6NPmsueBejezR+VNMgNSpRBJYkkExG3u6Sz6/du1BbPbqfymZVmGrTAUjj4EFqvxoMFHFY2/sjdKggRZl2E3abaAHN6yoqsj2kIzRs5CQCb6mZDdvP0kUBT3TAFQ2vU8WUVCUI6dXsAEVrpLVXADBz8I0=</D></RSAKeyValue>";
         private string publicKey = @"<RSAKeyValue><Modulus>trb7takt7C/wZALmO4Yy17yzjd6/MxCzOSYfBd0dHK6L1SYEgzhGldkSA4+sUeYwn3xqZe8vvRc8dzV0xsD/FtUQTpTrH7wnSgBmQKZ5UxdFwNIZWHWcR9YK43ilkA/2siRiQKNFLOPsOF0zKC5u+ir19bcQX2s1J1sVzImId/E=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>";
-        /// <summary>
-        /// 测试Post请求（对称加密）
-        /// </summary>
-        /// <param name="test">{"Id":1,"Name":"123"}</param>
-        /// <returns></returns>
-        [Route("SymEncrypt")]
-        [HttpPost]
-        [AllowAnonymous]
-        public ReturnMessage SymEncrypt(Decrypt<SymEncryptModel> test)
-        {
-            return this.Repository.Test(test.DecryptModel);
-        }
-        [HttpPost]
-        [Route("TestStringParameter")]
-        [AllowAnonymous]
-        public ReturnMessage TestStringParameter(dynamic name)
-        {
-            //web api方法只有一个参数时，默认为fromuri参数。
-            //[frombody]：没有key，key为"",value为web api方法参数/string,json...
-            return new ReturnMessage(ReturnMsgStatuEnum.Success, name.name.ToString(), name.name);
-        }
-        /// <summary>
-        /// 测试Get请求
-        /// </summary>
-        /// <returns></returns>
-        [HttpGet]
-        [Route("TestGetResponse")]
-        [AllowAnonymous]
-        public ReturnMessage TestGetResponse()
-        {
-            return new ReturnMessage(ReturnMsgStatuEnum.Success,"成功","");
-        }
+        
+     
         /// <summary>
         /// 测试非对称加密 
         /// </summary>

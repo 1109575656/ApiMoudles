@@ -132,7 +132,10 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\BaseApiControl.cs" />
+    <Compile Include="Controllers\TestAuthenticationController.cs" />
     <Compile Include="Controllers\TestController.cs" />
+    <Compile Include="Controllers\TestNotEncryptController.cs" />
+    <Compile Include="Controllers\TestSymmetricController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

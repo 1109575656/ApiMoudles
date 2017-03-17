@@ -42,3 +42,14 @@ E:\Api加密\BusinessLayer\bin\Debug\Newtonsoft.Json.xml
 E:\Api加密\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
 E:\Api加密\BusinessLayer\obj\Debug\BusinessLayer.dll
 E:\Api加密\BusinessLayer\obj\Debug\BusinessLayer.pdb
+E:\WxfApi\ApiMoudles\BusinessLayer\bin\Debug\BusinessLayer.dll
+E:\WxfApi\ApiMoudles\BusinessLayer\bin\Debug\BusinessLayer.pdb
+E:\WxfApi\ApiMoudles\BusinessLayer\bin\Debug\DataLayer.dll
+E:\WxfApi\ApiMoudles\BusinessLayer\bin\Debug\DBUtility.dll
+E:\WxfApi\ApiMoudles\BusinessLayer\bin\Debug\Newtonsoft.Json.dll
+E:\WxfApi\ApiMoudles\BusinessLayer\bin\Debug\DataLayer.pdb
+E:\WxfApi\ApiMoudles\BusinessLayer\bin\Debug\DBUtility.pdb
+E:\WxfApi\ApiMoudles\BusinessLayer\bin\Debug\Newtonsoft.Json.xml
+E:\WxfApi\ApiMoudles\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+E:\WxfApi\ApiMoudles\BusinessLayer\obj\Debug\BusinessLayer.dll
+E:\WxfApi\ApiMoudles\BusinessLayer\obj\Debug\BusinessLayer.pdb

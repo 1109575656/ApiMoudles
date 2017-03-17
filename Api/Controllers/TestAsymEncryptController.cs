@@ -58,18 +58,6 @@ namespace Api.Controllers
         [AllowAnonymous]
         public ReturnMessage AsymEncrypt(AsymEncryptModel req)
         {
-            //加密事例：
-            //string publicKey = @"<RSAKeyValue><Modulus>trb7takt7C/wZALmO4Yy17yzjd6/MxCzOSYfBd0dHK6L1SYEgzhGldkSA4+sUeYwn3xqZe8vvRc8dzV0xsD/FtUQTpTrH7wnSgBmQKZ5UxdFwNIZWHWcR9YK43ilkA/2siRiQKNFLOPsOF0zKC5u+ir19bcQX2s1J1sVzImId/E=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>";
-            //DateTime dt = DateTime.Now;
-            //string name = "张三";
-            //int age = 12;
-            //long _timestamp = dt.Ticks;
-            //Dictionary<string, string> dic = new Dictionary<string, string>();
-            //dic.Add("Name", name);
-            //dic.Add("Age", age.ToString());
-            //dic.Add("Timestamp", _timestamp.ToString());
-            //string md5EncryptStr = EncryptHelper.MessageDigest(dic); //获得摘要
-            //string rsaEncrypt = EncryptHelper.RSAEncrypt(publicKey, md5EncryptStr); //rsa加密
             if (req == null)
             {
                 return new ReturnMessage(ReturnMsgStatuEnum.Failed, "", null);
@@ -78,7 +66,7 @@ namespace Api.Controllers
             long timestamp = req.Timestamp;
             var requestTime = new DateTime(timestamp);
             //判断请求是否过期---假设过期时间是20秒
-            var addReqTime = requestTime.AddSeconds(600);
+            var addReqTime = requestTime.AddSeconds(60);
             //if (addReqTime < new DateTime(2017,1,10,11,37,42))
             if (addReqTime < DateTime.Now)
             {
@@ -96,7 +84,7 @@ namespace Api.Controllers
             {
                 return new ReturnMessage(ReturnMsgStatuEnum.Failed, "验签失败！", null);
             }
-            return new ReturnMessage(ReturnMsgStatuEnum.Success, "验签成功！参数正确", new { Name = req.Name, Age = req.Age, Timestamp = req.Timestamp });
+            return new ReturnMessage(ReturnMsgStatuEnum.Success, "验签成功！参数正确", new { Name = req.Name, Age = req.Age, Timestamp = req.Timestamp.ToString() });
         }
     }
 }

@@ -26,6 +26,27 @@ namespace Api.Controllers
         public TestAsymEncryptController() : base(new TestAuthenticationRepository())
         {
         }
+        /// <summary>
+        /// 生成请求非对称加密参数
+        /// </summary>
+        /// <returns></returns>
+        [Route("CreateAsymEncryptRequestPar")]
+        [HttpGet]
+        [AllowAnonymous]
+        public ReturnMessage CreateAsymEncryptRequestPar()
+        {
+            DateTime dt = DateTime.Now;
+            string name = "张三";
+            int age = 12;
+            long _timestamp = dt.Ticks;
+            Dictionary<string, string> dic = new Dictionary<string, string>();
+            dic.Add("Name", name);
+            dic.Add("Age", age.ToString());
+            dic.Add("Timestamp", _timestamp.ToString());
+            string md5EncryptStr = ApiHelper.MessageDigest(dic); //获得摘要
+            string rsaEncrypt = ApiHelper.RSAEncrypt(publicKey, md5EncryptStr); //rsa加密
+            return new ReturnMessage(ReturnMsgStatuEnum.Success, "生成成功,60秒过期", new {Name=name,Age=age.ToString(),Timestamp = _timestamp.ToString(),Sign = rsaEncrypt });
+        }
 
         /// <summary>
         ///     测试非对称加密
@@ -54,9 +75,10 @@ namespace Api.Controllers
                 return new ReturnMessage(ReturnMsgStatuEnum.Failed, "", null);
             }
             //时间戳转换为datetime
-            var requestTime = new DateTime(req.Timestamp);
+            long timestamp = req.Timestamp;
+            var requestTime = new DateTime(timestamp);
             //判断请求是否过期---假设过期时间是20秒
-            var addReqTime = requestTime.AddSeconds(60);
+            var addReqTime = requestTime.AddSeconds(600);
             //if (addReqTime < new DateTime(2017,1,10,11,37,42))
             if (addReqTime < DateTime.Now)
             {
@@ -67,14 +89,14 @@ namespace Api.Controllers
             var parameters = new Dictionary<string, string>();
             parameters.Add("Name", req.Name);
             parameters.Add("Age", req.Age.ToString());
-            parameters.Add("Timestamp", req.Timestamp.ToString());
+            parameters.Add("Timestamp", timestamp.ToString());
             var sign = ApiHelper.MessageDigest(parameters);
             //验签
             if (!decryptStr.Equals(sign))
             {
                 return new ReturnMessage(ReturnMsgStatuEnum.Failed, "验签失败！", null);
             }
-            return new ReturnMessage(ReturnMsgStatuEnum.Success, "验签成功！参数正确", null);
+            return new ReturnMessage(ReturnMsgStatuEnum.Success, "验签成功！参数正确", new { Name = req.Name, Age = req.Age, Timestamp = req.Timestamp });
         }
     }
 }

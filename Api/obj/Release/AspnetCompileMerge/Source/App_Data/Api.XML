@@ -65,6 +65,12 @@
              非对称加密
             </summary>
         </member>
+        <member name="M:Api.Controllers.TestAsymEncryptController.CreateAsymEncryptRequestPar">
+            <summary>
+            生成请求非对称加密参数
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:Api.Controllers.TestAsymEncryptController.AsymEncrypt(BusinessLayer.ViewModel.AsymEncryptModel)">
             <summary>
                 测试非对称加密

@@ -30,5 +30,6 @@ E:\WxfApi\ApiMoudles\DBUtility\bin\Debug\DBUtility.dll
 E:\WxfApi\ApiMoudles\DBUtility\bin\Debug\DBUtility.pdb
 E:\WxfApi\ApiMoudles\DBUtility\bin\Debug\Newtonsoft.Json.dll
 E:\WxfApi\ApiMoudles\DBUtility\bin\Debug\Newtonsoft.Json.xml
+E:\WxfApi\ApiMoudles\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
 E:\WxfApi\ApiMoudles\DBUtility\obj\Debug\DBUtility.dll
 E:\WxfApi\ApiMoudles\DBUtility\obj\Debug\DBUtility.pdb

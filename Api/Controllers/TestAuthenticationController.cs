@@ -24,7 +24,7 @@ namespace Api.Controllers
         /// <summary>
         ///     登陆（DES对称加密，密钥：a!s@d#f$）
         /// </summary>
-        /// <param name="req">{"LoginName":"1109575656","Password":"1109575656"}</param>
+        /// <param name="req">{"LoginName":"1109575656","Password":"1109575656"} 加密后：{"DecryptT":"NkZSq7z1Q7HmOcyEyFBAwweysI/HDm/aQt+8R+cYpxZY4Zrj5W4qh3YatzB7B7yp78Z0OHpFvHE="}</param>
         /// <returns></returns>
         [Route("SignIn")]
         [HttpPost]

@@ -21,10 +21,16 @@ namespace Api.Helper
                     return default(T);
                 }
                 var json = ApiHelper.DecryptDES(DecryptT, DesKey);
+                if (json.Equals(DecryptT))
+                {
+                    return default(T);
+                }
                 return JsonConvert.DeserializeObject<T>(json);
             }
         }
-
+        /// <summary>
+        /// 服务器解析所需Key
+        /// </summary>
         public string DecryptT { get; set; }
     }
 }

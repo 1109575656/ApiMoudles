@@ -17,6 +17,10 @@ namespace BusinessLayer.Repository
     {
         public ReturnMessage SignIn(SignInModel req)
         {
+            if (req == null)
+            {
+                return new ReturnMessage(ReturnMsgStatuEnum.Failed, "参数有误或加密有误！", "");
+            }
             if (req.LoginName != "1109575656" || req.Password != "1109575656")
             {
                  return new ReturnMessage(ReturnMsgStatuEnum.Failed, "账号密码有误！", "");

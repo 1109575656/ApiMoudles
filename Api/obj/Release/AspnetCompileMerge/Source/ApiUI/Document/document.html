@@ -1,13 +1,13 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="ApiDocApp">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>API Documetation</title>
-    <link href="styles/bootstrap.css" rel="stylesheet" />
-    <script src="scripts/angular-1.3.15/angular.js"></script>
-    <script src="scripts/angular-1.3.15/angular-route.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>API Documetation</title>
+<link href="styles/bootstrap.css" rel="stylesheet"/>
+<script src="scripts/angular-1.3.15/angular.js"></script>
+<script src="scripts/angular-1.3.15/angular-route.js"></script>
 
-    <script type="text/ng-template" id="guid.html">
+<script type="text/ng-template" id="guid.html">
 
         <div class="panel panel-default">
             <div class="panel-heading">客户端约定</div>
@@ -83,7 +83,7 @@ Pay(Order order)                                                                
     </script>
 
 
-    <script type="text/ng-template" id="status.html">
+<script type="text/ng-template" id="status.html">
 
 
         <div class="panel panel-default">
@@ -169,7 +169,7 @@ data: 返回结果
 
     </script>
 
-    <!--<script type="text/ng-template" id="sitestructure.html">
+<!--<script type="text/ng-template" id="sitestructure.html">
 
         <ul class="list-group">
             <li class="list-group-item">
@@ -222,7 +222,7 @@ WebForms
     </script>-->
 
 
-    <script type="text/ng-template" id="apidetail.html">
+<script type="text/ng-template" id="apidetail.html">
         <style type="text/css">
             .api-table > tbody > tr > td:first-child {
                 width: 120px;
@@ -422,143 +422,139 @@ WebForms
     </script>
 
 
-    <style type="text/css">
-        * {
-            font-family: 'Microsoft YaHei', sans-serif;
-        }
+<style type="text/css">
+    * { font-family: 'Microsoft YaHei', sans-serif; }
 
-        .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
-            z-index: 2;
-            color: #fff;
-            background-color: #0094ff;
-            border-color: #0094ef;
-        }
+    .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+        background-color: #0094ff;
+        border-color: #0094ef;
+        color: #fff;
+        z-index: 2;
+    }
 
-        li.active a {
-            color: white;
-        }
-    </style>
+    li.active a { color: white; }
+</style>
 </head>
 <body>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-12">
-                <h3>API Document</h3>
-            </div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <h3>API Document</h3>
         </div>
-        <div class="row" ng-controller="BodyCtrl">
-            <div class="col-md-3 col-sm-12" ng-controller="NavigationCtrl">
-                <ul class="list-group">
-                    <li class="list-group-item" ng-repeat="nav in navigations" ng-class="{active: nav.active}">
-                        <a href="{{nav.path}}">{{nav.name}}</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-9 col-sm-12">
-                <div ng-view></div>
-            </div>
+    </div>
+    <div class="row" ng-controller="BodyCtrl">
+        <div class="col-md-3 col-sm-12" ng-controller="NavigationCtrl">
+            <ul class="list-group">
+                <li class="list-group-item" ng-repeat="nav in navigations" ng-class="{active: nav.active}">
+                    <a href="{{nav.path}}">{{nav.name}}</a>
+                </li>
+            </ul>
         </div>
-
-
+        <div class="col-md-9 col-sm-12">
+            <div ng-view></div>
+        </div>
     </div>
 
 
-    <script>
-        var app = angular.module('ApiDocApp', ['ngRoute']);
+</div>
 
-        app.factory('ApiQuerySvc', function ($http, $q) {
-            var _apis = [];
-            var service = {
-                getStatus: function () {
-                    return $http({
+
+<script>
+    var app = angular.module('ApiDocApp', ['ngRoute']);
+
+    app.factory('ApiQuerySvc', function($http, $q) {
+        var _apis = [];
+        var service = {
+            getStatus: function() {
+                return $http({
+                    method: 'get',
+                    url: '/Api/ApiDocumentation?action=status'
+                });
+            },
+            getControllers: function() {
+                return this.getAll();
+            },
+            getAll: function() {
+                var defer = $q.defer();
+                if (_apis.length <= 0) {
+                    $http({
                         method: 'get',
-                        url: '/Api/ApiDocumentation?action=status'
-                    });
-                },
-                getControllers: function () {
-                    return this.getAll();
-                },
-                getAll: function () {
-                    var defer = $q.defer();
-                    if (_apis.length <= 0) {
-                        $http({
-                            method: 'get',
-                            url: '/Api/ApiDocumentation'
-                        }).then(function (rep) {
-                            var data = rep.data || [];
-                            _apis = data;
+                        url: '/Api/ApiDocumentation'
+                    }).then(function(rep) {
+                        var data = rep.data || [];
+                        _apis = data;
 
-                            for (var i = 0; i < _apis.length; i++) {
-                                var ctrl = _apis[i];
-                                if (ctrl && ctrl.controller && ctrl.controller.Name) {
-                                    var temporaryCtrlNames = ctrl.controller.Name.split('.');
-                                    ctrl.controller.ControllerName = temporaryCtrlNames[temporaryCtrlNames.length - 1].replace('Controller', '');
-                                } else {
-                                    console.log('invalid controller name: ', ctrl);
-                                }
-                            }
-
-                            defer.resolve(_apis);
-                        }, function () {
-                            defer.reject();
-                        });
-                    } else {
-                        defer.resolve(_apis);
-                    }
-
-                    return defer.promise;
-                },
-                getApisByController: function (apiId) {
-                    var defer = $q.defer();
-
-                    var filter = function () {
-                        var matchedApi = undefined;
                         for (var i = 0; i < _apis.length; i++) {
-                            if (_apis[i].controller.ControllerName === apiId) {
-                                matchedApi = _apis[i];
-                                break;
+                            var ctrl = _apis[i];
+                            if (ctrl && ctrl.controller && ctrl.controller.Name) {
+                                var temporaryCtrlNames = ctrl.controller.Name.split('.');
+                                ctrl.controller.ControllerName = temporaryCtrlNames[temporaryCtrlNames.length - 1].replace('Controller', '');
+                            } else {
+                                console.log('invalid controller name: ', ctrl);
                             }
                         }
-                        if (matchedApi) {
-                            defer.resolve(matchedApi);
-                        } else {
-                            defer.reject();
+
+                        defer.resolve(_apis);
+                    }, function() {
+                        defer.reject();
+                    });
+                } else {
+                    defer.resolve(_apis);
+                }
+
+                return defer.promise;
+            },
+            getApisByController: function(apiId) {
+                var defer = $q.defer();
+
+                var filter = function() {
+                    var matchedApi = undefined;
+                    for (var i = 0; i < _apis.length; i++) {
+                        if (_apis[i].controller.ControllerName === apiId) {
+                            matchedApi = _apis[i];
+                            break;
                         }
                     }
+                    if (matchedApi) {
+                        defer.resolve(matchedApi);
+                    } else {
+                        defer.reject();
+                    }
+                };
+                this.getAll().then(filter, filter);
 
-                    this.getAll().then(filter, filter);
+                return defer.promise;
+            }
+        };
+        return service;
+    });
 
-                    return defer.promise;
-                }
-            };
-            return service;
+    app.config(function($routeProvider) {
+        $routeProvider.when('/guid', {
+            controller: 'GuidCtrl',
+            templateUrl: 'guid.html'
+        }).when('/status', {
+            controller: 'StatausCodeCtrl',
+            templateUrl: 'status.html'
+        }).when('/site', {
+            templateUrl: 'sitestructure.html',
+            controller: 'SiteStructureCtrl'
+        }).when('/api/:id', {
+            controller: 'ApiDetailCtrl',
+            templateUrl: 'apidetail.html'
+        }).otherwise({
+            redirectTo: '/guid'
         });
+    });
 
-        app.config(function ($routeProvider) {
-            $routeProvider.when('/guid', {
-                controller: 'GuidCtrl',
-                templateUrl: 'guid.html'
-            }).when('/status', {
-                controller: 'StatausCodeCtrl',
-                templateUrl: 'status.html'
-            }).when('/site', {
-                templateUrl: 'sitestructure.html',
-                controller: 'SiteStructureCtrl'
-            }).when('/api/:id', {
-                controller: 'ApiDetailCtrl',
-                templateUrl: 'apidetail.html'
-            }).otherwise({
-                redirectTo: '/guid'
-            });
-        });
+    app.controller('BodyCtrl', function($scope) {
 
-        app.controller('BodyCtrl', function ($scope) {
+    });
 
-        });
-
-        app.controller('NavigationCtrl', function ($scope, $rootScope, ApiQuerySvc) {
-            var navs = $scope.navigations = [{
+    app.controller('NavigationCtrl', function($scope, $rootScope, ApiQuerySvc) {
+        var navs = $scope.navigations = [
+            {
                 name: 'API使用和设计规范',
                 path: '#/guid',
                 active: false
@@ -572,145 +568,145 @@ WebForms
             //    path: '#/site',
             //    active: false
             //}
-            ];
+        ];
 
-            ApiQuerySvc.getControllers().then(function (data) {
+        ApiQuerySvc.getControllers().then(function(data) {
 
-                var controllers = data;
+            var controllers = data;
 
-                for (var i = 0; i < controllers.length; i++) {
-                    var ctrl = controllers[i];
+            for (var i = 0; i < controllers.length; i++) {
+                var ctrl = controllers[i];
+                try {
+                    navs.push({
+                        name: ctrl.controller.ControllerName + '-' + ctrl.controller.Summary,
+                        path: '#/api/' + ctrl.controller.ControllerName,
+                        active: false
+                    });
+                } catch (ex) {
+                    console.info(ctrl);
+                    console.error(ex);
+                }
+            }
+            $rootScope.$emit('$routeChangeSuccess');
+        });
+
+
+        $rootScope.$on('$routeChangeSuccess', function(e, newPath, previousPath) {
+            for (var i = 0; i < navs.length; i++) {
+                if (navs[i].path.toLowerCase() === location.hash.toLowerCase()) {
+                    navs[i].active = true;
+                    document.title = navs[i].name;
+                } else {
+                    navs[i].active = false;
+                }
+            }
+        });
+
+    });
+
+    app.controller('GuidCtrl', function($scope) {
+
+    });
+    app.controller('StatausCodeCtrl', function($scope, $http, ApiQuerySvc) {
+        $scope.main = {
+            list: [],
+            refresh: function() {
+                ApiQuerySvc.getStatus().then(function(rep) {
+                    var result = rep.data;
+                    $scope.main.list = result;
+                });
+            }
+        };
+
+        $scope.main.refresh();
+    });
+
+    app.controller('ApiDetailCtrl', function($scope, ApiQuerySvc, $routeParams, $http) {
+        $scope.main = {
+            apis: [],
+            controller: {},
+            apiTest: {
+                headerValue: '',
+                urlParams: '',
+                body: '',
+                result: '',
+                selectedIndex: 0,
+                selected: function() {
+                    return $scope.main.apis[this.selectedIndex];
+                },
+                send: function() {
+                    var scope = this;
+
+                    var api = scope.selected();
+                    if (!api) {
+                        alert('接口选择错误');
+                        return;
+                    }
+
+                    var url = api.RelativePath || '';
+                    //替换URL参数
+                    if (scope.urlParams) {
+                        var params = scope.urlParams;
+                        params = params.split('&');
+                        for (var i = 0; i < params.length; i++) {
+                            var para = params[i];
+                            var placeholder = '{' + para.split('=')[0] + '}';
+                            var value = para.split('=')[1];
+                            url = url.replace(placeholder, value);
+                        }
+                    }
+
+                    var bodyData = undefined;
                     try {
-                        navs.push({
-                            name: ctrl.controller.ControllerName + '-' + ctrl.controller.Summary,
-                            path: '#/api/' + ctrl.controller.ControllerName,
-                            active: false
-                        });
+                        if (scope.body) {
+                            bodyData = JSON.parse(scope.body);
+                        }
                     } catch (ex) {
-                        console.info(ctrl);
-                        console.error(ex);
+                        alert('Body不是有效的JSON数据.(JSON的Key和类型为字符串的Value必须有双引号包裹)', ex.message);
+                        return;
                     }
-                }
-                $rootScope.$emit('$routeChangeSuccess');
-            });
 
+                    console.log('Request Information: ');
+                    console.log('Url: ', url);
+                    console.log('Method: ', api.HttpMethod);
+                    console.log('Body', bodyData);
 
-            $rootScope.$on('$routeChangeSuccess', function (e, newPath, previousPath) {
-                for (var i = 0; i < navs.length; i++) {
-                    if (navs[i].path.toLowerCase() === location.hash.toLowerCase()) {
-                        navs[i].active = true;
-                        document.title = navs[i].name;
-                    } else {
-                        navs[i].active = false;
-                    }
-                }
-            });
-
-        });
-
-        app.controller('GuidCtrl', function ($scope) {
-
-        });
-        app.controller('StatausCodeCtrl', function ($scope, $http, ApiQuerySvc) {
-            $scope.main = {
-                list: [],
-                refresh: function () {
-                    ApiQuerySvc.getStatus().then(function (rep) {
-                        var result = rep.data;
-                        $scope.main.list = result;
+                    $http({
+                        method: api.HttpMethod,
+                        url: '/' + url,
+                        data: bodyData,
+                        headers: {
+                            //"X-Equipment": this.headerValue
+                            "X-Equipment": "IOS"
+                        }
+                    }).then(function(rep) {
+                        scope.result = JSON.stringify(rep.data, null, 2);
+                    }, function(rep) {
+                        scope.result = {
+                            status: rep.status,
+                            statusText: rep.statusText
+                        };
                     });
                 }
-            };
+            }
+        };
+        var controllerName = $routeParams.id;
 
-            $scope.main.refresh();
+        ApiQuerySvc.getApisByController(controllerName).then(function(data) {
+            var apisData = data.apis;
+
+            for (var i = 0; i < apisData.length; i++) {
+                apisData[i].collapse = true;
+            }
+
+            $scope.main.apis = apisData;
+            $scope.main.controller = data.controller;
         });
+    });
 
-        app.controller('ApiDetailCtrl', function ($scope, ApiQuerySvc, $routeParams, $http) {
-            $scope.main = {
-                apis: [],
-                controller: {},
-                apiTest: {
-                    headerValue: '',
-                    urlParams: '',
-                    body: '',
-                    result: '',
-                    selectedIndex: 0,
-                    selected: function () {
-                        return $scope.main.apis[this.selectedIndex];
-                    },
-                    send: function () {
-                        var scope = this;
+    app.controller('SiteStructureCtrl', function($scope) {});
 
-                        var api = scope.selected();
-                        if (!api) {
-                            alert('接口选择错误');
-                            return;
-                        }
-
-                        var url = api.RelativePath || '';
-                        //替换URL参数
-                        if (scope.urlParams) {
-                            var params = scope.urlParams;
-                            params = params.split('&');
-                            for (var i = 0; i < params.length; i++) {
-                                var para = params[i];
-                                var placeholder = '{' + para.split('=')[0] + '}';
-                                var value = para.split('=')[1];
-                                url = url.replace(placeholder, value);
-                            }
-                        }
-
-                        var bodyData = undefined;
-                        try {
-                            if (scope.body) {
-                                bodyData = JSON.parse(scope.body);
-                            }
-                        } catch (ex) {
-                            alert('Body不是有效的JSON数据.(JSON的Key和类型为字符串的Value必须有双引号包裹)', ex.message);
-                            return;
-                        }
-
-                        console.log('Request Information: ');
-                        console.log('Url: ', url);
-                        console.log('Method: ', api.HttpMethod);
-                        console.log('Body', bodyData);
-
-                        $http({
-                            method: api.HttpMethod,
-                            url: '/' + url,
-                            data: bodyData,
-                            headers: {
-                                //"X-Equipment": this.headerValue
-                                "X-Equipment": "IOS"
-                            }
-                        }).then(function (rep) {
-                            scope.result = JSON.stringify(rep.data, null, 2);
-                        }, function (rep) {
-                            scope.result = {
-                                status: rep.status,
-                                statusText: rep.statusText
-                            };
-                        });
-                    }
-                }
-            };
-            var controllerName = $routeParams.id;
-
-            ApiQuerySvc.getApisByController(controllerName).then(function (data) {
-                var apisData = data.apis;
-
-                for (var i = 0; i < apisData.length; i++) {
-                    apisData[i].collapse = true;
-                }
-
-                $scope.main.apis = apisData;
-                $scope.main.controller = data.controller;
-            });
-        });
-
-        app.controller('SiteStructureCtrl', function ($scope) { });
-
-    </script>
+</script>
 
 </body>
 </html>

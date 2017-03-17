@@ -11,8 +11,9 @@ namespace Api.Controllers
     public class TestNotEncryptController : ApiController
     {
         //参数不区分大小写
+
         /// <summary>
-        ///  测试Get请求
+        ///  测试Get请求（没参数）
         /// </summary>
         /// <returns></returns>
         [HttpGet]
@@ -21,6 +22,19 @@ namespace Api.Controllers
         public ReturnMessage TestGetResponse()
         {
             return new ReturnMessage(ReturnMsgStatuEnum.Success, "成功", "");
+        }
+       /// <summary>
+        /// 测试Get请求（有参数）
+       /// </summary>
+       /// <param name="id">id</param>
+       /// <param name="name">name</param>
+       /// <returns></returns>
+        [HttpGet]
+        [Route("TestGetResponse2")]
+        [AllowAnonymous]
+        public ReturnMessage TestGetResponse2(string id,string name)
+        {
+            return new ReturnMessage(ReturnMsgStatuEnum.Success, "成功", new {Id=id,Name=name});
         }
 
         /// <summary>

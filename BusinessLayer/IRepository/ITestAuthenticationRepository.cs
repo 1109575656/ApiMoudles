@@ -8,8 +8,9 @@ using DataLayer.Model;
 
 namespace BusinessLayer.IRepository
 {
-    interface ITestAuthenticationRepository
+    public interface ITestAuthenticationRepository
     {
         ReturnMessage SignIn(SignInModel req);
+        ReturnMessage SignOut();
     }
 }

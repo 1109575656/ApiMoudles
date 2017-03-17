@@ -14,3 +14,11 @@ E:\Api加密\DBUtility\bin\Release\Newtonsoft.Json.xml
 E:\Api加密\DBUtility\obj\Release\DBUtility.csprojResolveAssemblyReference.cache
 E:\Api加密\DBUtility\obj\Release\DBUtility.dll
 E:\Api加密\DBUtility\obj\Release\DBUtility.pdb
+E:\WxfApi\ApiMoudles\DBUtility\bin\Release\DBUtility.dll
+E:\WxfApi\ApiMoudles\DBUtility\bin\Release\DBUtility.pdb
+E:\WxfApi\ApiMoudles\DBUtility\bin\Release\Newtonsoft.Json.dll
+E:\WxfApi\ApiMoudles\DBUtility\bin\Release\StackExchange.Redis.dll
+E:\WxfApi\ApiMoudles\DBUtility\bin\Release\Newtonsoft.Json.xml
+E:\WxfApi\ApiMoudles\DBUtility\obj\Release\DBUtility.csprojResolveAssemblyReference.cache
+E:\WxfApi\ApiMoudles\DBUtility\obj\Release\DBUtility.dll
+E:\WxfApi\ApiMoudles\DBUtility\obj\Release\DBUtility.pdb

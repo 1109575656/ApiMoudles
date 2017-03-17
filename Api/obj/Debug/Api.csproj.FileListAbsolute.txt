@@ -134,7 +134,6 @@ E:\WxfApi\ApiMoudles\Api\bin\System.Web.WebPages.Deployment.dll
 E:\WxfApi\ApiMoudles\Api\bin\System.Web.WebPages.dll
 E:\WxfApi\ApiMoudles\Api\bin\System.Web.WebPages.Razor.dll
 E:\WxfApi\ApiMoudles\Api\bin\WebGrease.dll
-E:\WxfApi\ApiMoudles\Api\bin\Dapper.dll
 E:\WxfApi\ApiMoudles\Api\bin\StackExchange.Redis.dll
 E:\WxfApi\ApiMoudles\Api\bin\BusinessLayer.pdb
 E:\WxfApi\ApiMoudles\Api\bin\DataLayer.pdb

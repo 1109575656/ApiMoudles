@@ -4,39 +4,61 @@
         <name>Api</name>
     </assembly>
     <members>
-        <member name="M:Api.Controllers.BaseApiControl`2.#ctor(`1)">
+        <member name="M:Api.BaseController.BaseApiControl`2.#ctor(`1)">
             <summary>
             实例化仓储
             </summary>
             <param name="rep"></param>
         </member>
-        <member name="P:Api.Controllers.BaseApiControl`2.Repository">
+        <member name="P:Api.BaseController.BaseApiControl`2.Repository">
             <summary>
             接口当前仓储
             </summary>
         </member>
-        <member name="P:Api.Controllers.BaseApiControl`2.IdentityId">
+        <member name="P:Api.BaseController.BaseApiControl`2.IdentityId">
             <summary>
             当前用户ID，NULL为未登陆
             </summary>
+        </member>
+        <member name="T:Api.Controllers.TestAuthenticationController">
+            <summary>
+            测试身份认证和授权
+            </summary>
+        </member>
+        <member name="T:Api.BaseController.TestBaseApiControl`1">
+            <summary>
+            测试父类
+            </summary>
+            <typeparam name="TRepository"></typeparam>
+        </member>
+        <member name="M:Api.BaseController.TestBaseApiControl`1.#ctor(`0)">
+            <summary>
+            实现仓储
+            </summary>
+            <param name="req"></param>
+        </member>
+        <member name="P:Api.BaseController.TestBaseApiControl`1.Repository">
+            <summary>
+            业务类
+            </summary>
+        </member>
+        <member name="M:Api.Controllers.TestAuthenticationController.SignIn(Api.Helper.Decrypt{BusinessLayer.RequestModel.SignInModel})">
+            <summary>
+            登陆（DES对称加密，密钥：a!s@d#f$）
+            </summary>
+            <param name="req">{"LoginName":"1109575656","Password":"1109575656"}</param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.TestAuthenticationController.SignOut">
+            <summary>
+            退出登陆
+            </summary>
+            <returns></returns>
         </member>
         <member name="T:Api.Controllers.TestController">
             <summary>
             产品中心
             </summary>
-        </member>
-        <member name="M:Api.Controllers.TestController.SymEncrypt(Api.Helper.Decrypt{BusinessLayer.ViewModel.SymEncryptModel})">
-            <summary>
-            测试Post请求（对称加密）
-            </summary>
-            <param name="test">{"Id":1,"Name":"123"}</param>
-            <returns></returns>
-        </member>
-        <member name="M:Api.Controllers.TestController.TestGetResponse">
-            <summary>
-            测试Get请求
-            </summary>
-            <returns></returns>
         </member>
         <member name="M:Api.Controllers.TestController.AsymEncrypt(BusinessLayer.ViewModel.AsymEncryptModel)">
             <summary>
@@ -45,22 +67,29 @@
             <param name="req">{"Name":"张三","Age":"12","Timestamp":"636196450812777599","Sign":"eAEgBKbAAG0L8aLRNt0QVcgR/uBQ2+UgPr9hJFyeWhE5OWuGfSZEV696um2uJs7qjzS2umlBUF9TYx2lphI6/VUjiSBqlTX0b8kfL83d/5wzmM/r5GIGkReRZUoYQnwn8Be1FK+k8H2dMtrUuOepp43KSTYRGmfMW9+3RXoM410="}</param>
             <returns></returns>
         </member>
-        <member name="M:Api.Controllers.TestController.GetData">
+        <member name="T:Api.Controllers.TestNotEncryptController">
             <summary>
-            获取数据
+            测试不用加密 and 不用登陆 的方法
+            </summary>
+        </member>
+        <member name="M:Api.Controllers.TestNotEncryptController.TestGetResponse">
+            <summary>
+            测试Get请求
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Api.Controllers.TestController.SignIn(BusinessLayer.RequestModel.SignInModel)">
+        <member name="M:Api.Controllers.TestNotEncryptController.TestPostResponse(BusinessLayer.ViewModel.SymEncryptModel)">
             <summary>
-            登录
+            测试Post请求多个参数（不用加密）
             </summary>
+            <param name="req">{"Id":"1","Name":"***"}</param>
             <returns></returns>
         </member>
-        <member name="M:Api.Controllers.TestController.SignOut">
+        <member name="M:Api.Controllers.TestNotEncryptController.TestStringParameter(System.Object)">
             <summary>
-            退出登录
+            测试POST一个参数
             </summary>
+            <param name="name">{"name":"xx"}</param>
             <returns></returns>
         </member>
         <member name="T:Api.Helper.Decrypt`1">

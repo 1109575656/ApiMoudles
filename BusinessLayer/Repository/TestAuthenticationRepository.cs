@@ -35,6 +35,22 @@ namespace BusinessLayer.Repository
                 context.Response.Cookies.Add(cookie);
                 return new ReturnMessage(ReturnMsgStatuEnum.Success, "登录成功", "");
             }
+
+
+        public ReturnMessage SignOut()
+        {
+            FormsAuthentication.SignOut();
+            HttpCookie cookie = HttpContext.Current.Request.Cookies[FormsAuthentication.FormsCookieName];
+            if (cookie != null)
+            {
+                cookie.HttpOnly = true;
+                cookie.Expires = DateTime.Now.AddDays(-1);
+                cookie.Secure = FormsAuthentication.RequireSSL;
+                cookie.Values.Clear();
+                HttpContext.Current.Response.Cookies.Add(cookie);
+            }
+            return new ReturnMessage(ReturnMsgStatuEnum.Success, "退出成功", "");
         }
+    }
     
 }

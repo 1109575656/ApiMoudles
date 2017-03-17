@@ -6,7 +6,7 @@ using System.Linq.Expressions;
 using System.Linq.Dynamic;
 using DataLayer.Model;
 
-namespace BusinessLayer.Repository
+namespace BusinessLayer.BaseRepository
 {
 
     public interface IGenericRepository<T> where T : class

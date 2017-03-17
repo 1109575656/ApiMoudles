@@ -6,3 +6,7 @@ E:\Api加密\DataLayer\bin\Release\DataLayer.dll
 E:\Api加密\DataLayer\bin\Release\DataLayer.pdb
 E:\Api加密\DataLayer\obj\Release\DataLayer.dll
 E:\Api加密\DataLayer\obj\Release\DataLayer.pdb
+E:\WxfApi\ApiMoudles\DataLayer\bin\Release\DataLayer.dll
+E:\WxfApi\ApiMoudles\DataLayer\bin\Release\DataLayer.pdb
+E:\WxfApi\ApiMoudles\DataLayer\obj\Release\DataLayer.dll
+E:\WxfApi\ApiMoudles\DataLayer\obj\Release\DataLayer.pdb

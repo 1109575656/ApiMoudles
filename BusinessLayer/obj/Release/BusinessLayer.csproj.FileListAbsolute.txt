@@ -26,3 +26,17 @@ E:\Api加密\BusinessLayer\bin\Release\Newtonsoft.Json.xml
 E:\Api加密\BusinessLayer\obj\Release\BusinessLayer.csprojResolveAssemblyReference.cache
 E:\Api加密\BusinessLayer\obj\Release\BusinessLayer.dll
 E:\Api加密\BusinessLayer\obj\Release\BusinessLayer.pdb
+E:\WxfApi\ApiMoudles\BusinessLayer\bin\Release\BusinessLayer.dll
+E:\WxfApi\ApiMoudles\BusinessLayer\bin\Release\BusinessLayer.pdb
+E:\WxfApi\ApiMoudles\BusinessLayer\bin\Release\Dapper.dll
+E:\WxfApi\ApiMoudles\BusinessLayer\bin\Release\DataLayer.dll
+E:\WxfApi\ApiMoudles\BusinessLayer\bin\Release\DBUtility.dll
+E:\WxfApi\ApiMoudles\BusinessLayer\bin\Release\Newtonsoft.Json.dll
+E:\WxfApi\ApiMoudles\BusinessLayer\bin\Release\StackExchange.Redis.dll
+E:\WxfApi\ApiMoudles\BusinessLayer\bin\Release\System.Linq.Dynamic.dll
+E:\WxfApi\ApiMoudles\BusinessLayer\bin\Release\DataLayer.pdb
+E:\WxfApi\ApiMoudles\BusinessLayer\bin\Release\DBUtility.pdb
+E:\WxfApi\ApiMoudles\BusinessLayer\bin\Release\Newtonsoft.Json.xml
+E:\WxfApi\ApiMoudles\BusinessLayer\obj\Release\BusinessLayer.csprojResolveAssemblyReference.cache
+E:\WxfApi\ApiMoudles\BusinessLayer\obj\Release\BusinessLayer.dll
+E:\WxfApi\ApiMoudles\BusinessLayer\obj\Release\BusinessLayer.pdb

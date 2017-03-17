@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web.Http;
+﻿using System.Web.Http;
+using Newtonsoft.Json.Converters;
 
 namespace Api
 {
@@ -12,19 +10,16 @@ namespace Api
             // Web API configuration and services
 
             GlobalConfiguration.Configuration.Formatters.JsonFormatter.SerializerSettings.Converters.Add(
-                new Newtonsoft.Json.Converters.IsoDateTimeConverter()
+                new IsoDateTimeConverter
                 {
                     DateTimeFormat = "yyyy-MM-dd HH:mm:ss"
                 }
-            );
+                );
             // Web API routes
             config.MapHttpAttributeRoutes();
 
-            config.Routes.MapHttpRoute(
-                name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
-                defaults: new { id = RouteParameter.Optional }
-            );
+            config.Routes.MapHttpRoute("DefaultApi", "api/{controller}/{id}", new {id = RouteParameter.Optional}
+                );
             config.Formatters.Remove(config.Formatters.XmlFormatter);
         }
     }

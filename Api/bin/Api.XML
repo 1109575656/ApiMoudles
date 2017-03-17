@@ -4,113 +4,118 @@
         <name>Api</name>
     </assembly>
     <members>
-        <member name="M:Api.Controllers.BaseApiControl`2.#ctor(`1)">
+        <member name="M:Api.BaseController.BaseApiControl`2.#ctor(`1)">
             <summary>
-            实例化仓储
+                实例化仓储
             </summary>
             <param name="rep"></param>
         </member>
-        <member name="P:Api.Controllers.BaseApiControl`2.Repository">
+        <member name="P:Api.BaseController.BaseApiControl`2.Repository">
             <summary>
-            接口当前仓储
+                接口当前仓储
             </summary>
         </member>
-        <member name="P:Api.Controllers.BaseApiControl`2.IdentityId">
+        <member name="P:Api.BaseController.BaseApiControl`2.IdentityId">
             <summary>
-            当前用户ID，NULL为未登陆
+                当前用户ID，NULL为未登陆
             </summary>
         </member>
         <member name="T:Api.Controllers.TestAuthenticationController">
             <summary>
-            测试身份认证和授权
+                测试身份认证和授权
             </summary>
+        </member>
+        <member name="T:Api.BaseController.TestBaseApiControl`1">
+            <summary>
+                测试父类
+            </summary>
+            <typeparam name="TRepository"></typeparam>
+        </member>
+        <member name="M:Api.BaseController.TestBaseApiControl`1.#ctor(`0)">
+            <summary>
+                实现仓储
+            </summary>
+            <param name="req"></param>
+        </member>
+        <member name="P:Api.BaseController.TestBaseApiControl`1.Repository">
+            <summary>
+                业务类
+            </summary>
+        </member>
+        <member name="M:Api.Controllers.TestAuthenticationController.#ctor">
+            <summary>
+                实现
+            </summary>
+        </member>
+        <member name="M:Api.Controllers.TestAuthenticationController.SignIn(Api.Helper.Decrypt{BusinessLayer.RequestModel.SignInModel})">
+            <summary>
+                登陆（DES对称加密，密钥：a!s@d#f$）
+            </summary>
+            <param name="req">{"LoginName":"1109575656","Password":"1109575656"}</param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.TestAuthenticationController.SignOut">
+            <summary>
+            退出登陆
+            </summary>
+            <returns></returns>
         </member>
         <member name="T:Api.Controllers.TestController">
             <summary>
-            产品中心
+             非对称加密
             </summary>
         </member>
         <member name="M:Api.Controllers.TestController.AsymEncrypt(BusinessLayer.ViewModel.AsymEncryptModel)">
             <summary>
-            测试非对称加密 
+                测试非对称加密
             </summary>
             <param name="req">{"Name":"张三","Age":"12","Timestamp":"636196450812777599","Sign":"eAEgBKbAAG0L8aLRNt0QVcgR/uBQ2+UgPr9hJFyeWhE5OWuGfSZEV696um2uJs7qjzS2umlBUF9TYx2lphI6/VUjiSBqlTX0b8kfL83d/5wzmM/r5GIGkReRZUoYQnwn8Be1FK+k8H2dMtrUuOepp43KSTYRGmfMW9+3RXoM410="}</param>
             <returns></returns>
         </member>
-        <member name="M:Api.Controllers.TestController.GetData">
-            <summary>
-            获取数据
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Api.Controllers.TestController.SignIn(BusinessLayer.RequestModel.SignInModel)">
-            <summary>
-            登录
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Api.Controllers.TestController.SignOut">
-            <summary>
-            退出登录
-            </summary>
-            <returns></returns>
-        </member>
         <member name="T:Api.Controllers.TestNotEncryptController">
             <summary>
-            测试不用加密 and 不用登陆 的方法
+                测试不用加密 and 不用登陆 的方法
             </summary>
         </member>
         <member name="M:Api.Controllers.TestNotEncryptController.TestGetResponse">
             <summary>
-            测试Get请求
+             测试Get请求
             </summary>
             <returns></returns>
         </member>
         <member name="M:Api.Controllers.TestNotEncryptController.TestPostResponse(BusinessLayer.ViewModel.SymEncryptModel)">
             <summary>
-            测试Post请求多个参数（不用加密）
+                测试Post请求多个参数（不用加密）
             </summary>
             <param name="req">{"Id":"1","Name":"***"}</param>
             <returns></returns>
         </member>
         <member name="M:Api.Controllers.TestNotEncryptController.TestStringParameter(System.Object)">
             <summary>
-            测试POST一个参数
+                测试POST一个参数
             </summary>
             <param name="name">{"name":"xx"}</param>
             <returns></returns>
         </member>
-        <member name="T:Api.Controllers.TestSymmetricController">
-            <summary>
-            测试DES对称加密
-            </summary>
-        </member>
-        <member name="M:Api.Controllers.TestSymmetricController.SymEncrypt(Api.Helper.Decrypt{BusinessLayer.ViewModel.SymEncryptModel})">
-            <summary>
-            测试Post请求（对称加密）
-            </summary>
-            <param name="test">{"Id":1,"Name":"123"}</param>
-            <returns></returns>
-        </member>
         <member name="T:Api.Helper.Decrypt`1">
             <summary>
-            解密
+                解密
             </summary>
             <typeparam name="T"></typeparam>
         </member>
         <member name="T:Api.Log.ApiRecordLogAttribute">
             <summary>
-            请求响应日志
+                请求响应日志
             </summary>
         </member>
         <member name="T:Api.Log.AuthorityAttribute">
             <summary>
-            权限控制
+                权限控制
             </summary>
         </member>
         <member name="T:Api.ApiUI.ApiDocumentationController">
             <summary>
-            接口文档
+                接口文档
             </summary>
             <note>用于本页面的接口信息获取</note>
             <permission>匿名用户</permission>

@@ -19,6 +19,5 @@ E:\Api加密\DataLayer\obj\Debug\DataLayer.dll
 E:\Api加密\DataLayer\obj\Debug\DataLayer.pdb
 E:\WxfApi\ApiMoudles\DataLayer\bin\Debug\DataLayer.dll
 E:\WxfApi\ApiMoudles\DataLayer\bin\Debug\DataLayer.pdb
-E:\WxfApi\ApiMoudles\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache
 E:\WxfApi\ApiMoudles\DataLayer\obj\Debug\DataLayer.dll
 E:\WxfApi\ApiMoudles\DataLayer\obj\Debug\DataLayer.pdb

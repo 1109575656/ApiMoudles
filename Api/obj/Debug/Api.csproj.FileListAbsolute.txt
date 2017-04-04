@@ -165,9 +165,6 @@ E:\WxfApi\ApiMoudles\Api\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
 E:\WxfApi\ApiMoudles\Api\obj\Debug\Api.csprojResolveAssemblyReference.cache
 E:\WxfApi\ApiMoudles\Api\obj\Debug\Api.dll
 E:\WxfApi\ApiMoudles\Api\obj\Debug\Api.pdb
-G:\ApiMoudles\Api\obj\Debug\Api.csprojResolveAssemblyReference.cache
-G:\ApiMoudles\Api\obj\Debug\Api.dll
-G:\ApiMoudles\Api\obj\Debug\Api.pdb
 G:\ApiMoudles\Api\bin\Api.dll.config
 G:\ApiMoudles\Api\bin\Api.dll
 G:\ApiMoudles\Api\bin\Api.pdb
@@ -220,3 +217,6 @@ G:\ApiMoudles\Api\bin\zh-Hans\System.Web.Razor.resources.dll
 G:\ApiMoudles\Api\bin\zh-Hans\System.Web.WebPages.resources.dll
 G:\ApiMoudles\Api\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
 G:\ApiMoudles\Api\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+G:\ApiMoudles\Api\obj\Debug\Api.csprojResolveAssemblyReference.cache
+G:\ApiMoudles\Api\obj\Debug\Api.dll
+G:\ApiMoudles\Api\obj\Debug\Api.pdb

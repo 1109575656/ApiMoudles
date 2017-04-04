@@ -32,12 +32,44 @@ namespace Api.Controllers
         {
             return Repository.SignIn(req.DecryptModel);
         }
-
+        /// <summary>
+        /// 测试
+        /// </summary>
+        /// <returns></returns>
+        [Route("TestRoles3")]
+        [HttpGet]
+        [AuthorizeAttribute]
+        public ReturnMessage TestRoles3()
+        {
+            return new ReturnMessage(ReturnMsgStatuEnum.Success, "", null);
+        }
+        /// <summary>
+        /// 测试zhangsan角色(必须登陆)
+        /// </summary>
+        /// <returns></returns>
+        [Route("TestRoles")]
+        [HttpGet]
+        [Authorize(Roles = "zhangsan")]
+        public ReturnMessage TestRoles()
+        {
+            return new ReturnMessage(ReturnMsgStatuEnum.Success, "", null);
+        }
+        /// <summary>
+        /// 测试admin角色(必须登陆)
+        /// </summary>
+        /// <returns></returns>
+        [Route("TestRoles2")]
+        [HttpGet]
+        [Authorize(Roles = "admin")]
+        public ReturnMessage TestRoles2()
+        {
+            return new ReturnMessage(ReturnMsgStatuEnum.Success, "", null);
+        }
         /// <summary>
         /// 退出登陆
         /// </summary>
         /// <returns></returns>
-        [Route("SignIn")]
+        [Route("SignOut")]
         [HttpGet]
         [Authorize]
         public ReturnMessage SignOut()

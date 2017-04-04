@@ -14,7 +14,6 @@ namespace Api.Controllers
     ///  非对称加密
     /// </summary>
     [RoutePrefix("V1/Test")]
-    [Authorize]
     public class TestAsymEncryptController : TestBaseApiControl<ITestAuthenticationRepository>
     {
         private readonly string privateKey =
@@ -32,7 +31,6 @@ namespace Api.Controllers
         /// <returns></returns>
         [Route("CreateAsymEncryptRequestPar")]
         [HttpGet]
-        [AllowAnonymous]
         public ReturnMessage CreateAsymEncryptRequestPar()
         {
             DateTime dt = DateTime.Now;
@@ -55,7 +53,6 @@ namespace Api.Controllers
         /// <returns></returns>
         [Route("AsymEncrypt")]
         [HttpPost]
-        [AllowAnonymous]
         public ReturnMessage AsymEncrypt(AsymEncryptModel req)
         {
             if (req == null)

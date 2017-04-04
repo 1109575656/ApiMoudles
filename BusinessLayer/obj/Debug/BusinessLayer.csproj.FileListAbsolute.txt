@@ -53,3 +53,14 @@ E:\WxfApi\ApiMoudles\BusinessLayer\bin\Debug\Newtonsoft.Json.xml
 E:\WxfApi\ApiMoudles\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
 E:\WxfApi\ApiMoudles\BusinessLayer\obj\Debug\BusinessLayer.dll
 E:\WxfApi\ApiMoudles\BusinessLayer\obj\Debug\BusinessLayer.pdb
+G:\ApiMoudles\BusinessLayer\bin\Debug\BusinessLayer.dll
+G:\ApiMoudles\BusinessLayer\bin\Debug\BusinessLayer.pdb
+G:\ApiMoudles\BusinessLayer\bin\Debug\DataLayer.dll
+G:\ApiMoudles\BusinessLayer\bin\Debug\DBUtility.dll
+G:\ApiMoudles\BusinessLayer\bin\Debug\Newtonsoft.Json.dll
+G:\ApiMoudles\BusinessLayer\bin\Debug\DataLayer.pdb
+G:\ApiMoudles\BusinessLayer\bin\Debug\DBUtility.pdb
+G:\ApiMoudles\BusinessLayer\bin\Debug\Newtonsoft.Json.xml
+G:\ApiMoudles\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+G:\ApiMoudles\BusinessLayer\obj\Debug\BusinessLayer.dll
+G:\ApiMoudles\BusinessLayer\obj\Debug\BusinessLayer.pdb

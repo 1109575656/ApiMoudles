@@ -1,6 +1,7 @@
 ﻿using System.Web.Http;
 using BusinessLayer.ViewModel;
 using DataLayer.Model;
+using System;
 
 namespace Api.Controllers
 {
@@ -18,7 +19,6 @@ namespace Api.Controllers
         /// <returns></returns>
         [HttpGet]
         [Route("TestGetResponse")]
-        [AllowAnonymous]
         public ReturnMessage TestGetResponse()
         {
             return new ReturnMessage(ReturnMsgStatuEnum.Success, "成功", "");
@@ -31,7 +31,6 @@ namespace Api.Controllers
        /// <returns></returns>
         [HttpGet]
         [Route("TestGetResponse2")]
-        [AllowAnonymous]
         public ReturnMessage TestGetResponse2(string id,string name)
         {
             return new ReturnMessage(ReturnMsgStatuEnum.Success, "成功", new {Id=id,Name=name});
@@ -44,7 +43,6 @@ namespace Api.Controllers
         /// <returns></returns>
         [HttpPost]
         [Route("TestPostResponse")]
-        [AllowAnonymous]
         public ReturnMessage TestPostResponse(SymEncryptModel req)
         {
             return new ReturnMessage(ReturnMsgStatuEnum.Success, "成功", new {req.Id, req.Name});
@@ -57,7 +55,6 @@ namespace Api.Controllers
         /// <returns></returns>
         [HttpPost]
         [Route("TestStringParameter")]
-        [AllowAnonymous]
         public ReturnMessage TestStringParameter(dynamic name)
         {
             //web api方法只有一个参数时，默认为fromuri参数。

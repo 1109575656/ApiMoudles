@@ -23,7 +23,7 @@ namespace Api.Log
             var requestBody = ""; //Formbody参数（请求参数）
             try
             {
-                //1KB
+                //1M
                 if (req.TotalBytes <= 1024*1024)
                 {
                     using (var reader = new StreamReader(req.InputStream))

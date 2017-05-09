@@ -15,6 +15,7 @@ namespace DBUtility
     /// </summary>
     public  class ApiHelper
     {
+        #region RSA加密解密
         /// <summary>
         /// 生成私钥和公钥
         /// </summary>
@@ -52,6 +53,9 @@ namespace DBUtility
             string plainText = Encoding.Default.GetString(plainData);
             return plainText;
         }
+        #endregion
+
+        #region MD5
         //对参数散列加密（消息摘要），返回摘要值
         public static string MessageDigest(Dictionary<string, string> parameters)
         {
@@ -81,6 +85,8 @@ namespace DBUtility
                 return null;
             }
         }
+        #endregion
+
         #region DES加密解密字符串
         /// <summary>
         /// DES加密字符串
@@ -466,6 +472,7 @@ namespace DBUtility
 
         #endregion
 
+        #region 写入文件
         /// <summary>
         /// 写入文件,不存在则创建文件
         /// </summary>
@@ -488,5 +495,6 @@ namespace DBUtility
                 return false;
             }
         }
+        #endregion
     }
 }

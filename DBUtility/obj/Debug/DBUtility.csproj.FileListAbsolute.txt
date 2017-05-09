@@ -40,3 +40,4 @@ G:\ApiMoudles\DBUtility\bin\Debug\Newtonsoft.Json.xml
 G:\ApiMoudles\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
 G:\ApiMoudles\DBUtility\obj\Debug\DBUtility.dll
 G:\ApiMoudles\DBUtility\obj\Debug\DBUtility.pdb
+G:\ApiMoudles\DBUtility\bin\Debug\RabbitMQ.Client.dll

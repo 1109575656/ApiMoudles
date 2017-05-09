@@ -64,3 +64,4 @@ G:\ApiMoudles\BusinessLayer\bin\Debug\Newtonsoft.Json.xml
 G:\ApiMoudles\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
 G:\ApiMoudles\BusinessLayer\obj\Debug\BusinessLayer.dll
 G:\ApiMoudles\BusinessLayer\obj\Debug\BusinessLayer.pdb
+G:\ApiMoudles\BusinessLayer\bin\Debug\RabbitMQ.Client.dll

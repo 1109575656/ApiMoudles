@@ -5,15 +5,16 @@ using System.Data.Linq;
 using System.Linq.Expressions;
 using System.Linq.Dynamic;
 using DataLayer.Model;
+using System.Data.Entity;
 
 namespace BusinessLayer.BaseRepository
 {
 
     public interface IGenericRepository<T> where T : class
     {
-        ModelContext Context { get; }
+        EFModelContext Context { get; }
 
-        Table<T> GetTable();
+        DbSet<T> GetEntity();
 
         IQueryable<T> AsQuerable();
 
@@ -111,77 +112,38 @@ namespace BusinessLayer.BaseRepository
         bool DeleteMulti(Expression<Func<T, bool>> condition);
         bool DeleteMulti(string condition, object[] parameters);
         bool DeleteMulti(IEnumerable<T> entities);
-
-
-        #region 需要单独实现
-        /// <summary>
-        /// Update record and submit
-        /// </summary>
-        /// <param name="entity">Entity</param>
-        /// <returns>Updated or not</returns>
-        bool Update(T entity);
-
-        /// <summary>
-        /// reset value
-        /// </summary>
-        void Update(T from, T to);
-
-        /// <summary>
-        /// Update record and submit
-        /// </summary>
-        /// <param name="filter">query filter</param>
-        /// <param name="entity">entity</param>
-        /// <returns>updated</returns>
-        bool Update(Expression<Func<T, bool>> filter, T entity);
-
-        /// <summary>
-        /// 数据校验
-        /// </summary>
-        /// <param name="entity">Entity</param>
-        /// <returns></returns>
-        Tuple<bool, string> IsValid(T entity);
-
-
-        /// <summary>
-        /// 此条记录是否重复
-        /// </summary>
-        /// <param name="entity">Entity</param>
-        /// <returns></returns>
-        bool IsRepeat(T entity);
-        #endregion
-
-        void Save();
+        int Save();
     }
 
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
-        public ModelContext Context { get; private set; }
+        public EFModelContext Context { get; private set; }
         private T Entity { get; set; }
 
         public GenericRepository()
         {
-            this.Context = new ModelContext();
+            this.Context = new EFModelContext();
             this.Entity = default(T);
         }
 
-        public GenericRepository(ModelContext context)
+        public GenericRepository(EFModelContext context)
         {
             this.Context = context;
             this.Entity = default(T);
         }
 
-        public Table<T> GetTable()
+        public int Save()
         {
-            return this.Context.GetTable<T>();
+            return this.Context.SaveChanges();
         }
-        public void Save()
+        public DbSet<T> GetEntity()
         {
-            this.Context.SubmitChanges();
+            return this.Context.Set<T>();
         }
 
         public IQueryable<T> AsQuerable()
         {
-            return this.GetTable();
+            return this.GetEntity();
         }
 
         public IQueryable<T> FindAll()
@@ -210,31 +172,31 @@ namespace BusinessLayer.BaseRepository
             return this.AsQuerable().FirstOrDefault(condition);
         }
 
-        #region Delete
+        #region 删除
         public bool Delete(T entity)
         {
-            this.GetTable().DeleteOnSubmit(entity);
+            this.GetEntity().Remove(entity);
             return true;
         }
-
+        // m=> m.xx==xx
         public bool Delete(Expression<Func<T, bool>> condition)
         {
             var entity = this.FindOne(condition);
             if (entity == null) return false;
-            this.GetTable().DeleteOnSubmit(entity);
+            this.GetEntity().Remove(entity);
             return true;
         }
 
         public bool DeleteMulti(Expression<Func<T, bool>> condition)
         {
             var entities = this.Query(condition);
-            this.GetTable().DeleteAllOnSubmit(entities);
+            this.GetEntity().RemoveRange(entities);
             return true;
         }
 
         public bool DeleteMulti(IEnumerable<T> entities)
         {
-            this.GetTable().DeleteAllOnSubmit(entities);
+            this.GetEntity().RemoveRange(entities);
             return true;
         }
 
@@ -242,7 +204,7 @@ namespace BusinessLayer.BaseRepository
         {
             var entity = this.FindOne(condition, parameters);
             if (entity == null) return false;
-            this.GetTable().DeleteOnSubmit(entity);
+            this.GetEntity().Remove(entity);
             return true;
         }
 
@@ -250,53 +212,22 @@ namespace BusinessLayer.BaseRepository
         {
 
             var entities = this.Query(condition, parameters);
-            this.GetTable().DeleteAllOnSubmit(entities);
+            this.GetEntity().RemoveRange(entities);
             return true;
         }
         #endregion
 
+        #region 添加
         public T Insert(T entity)
         {
-            this.GetTable().InsertOnSubmit(entity);
+            this.GetEntity().Add(entity);
             return entity;
         }
 
         public IEnumerable<T> InsertMulti(IEnumerable<T> entities)
         {
-            this.GetTable().InsertAllOnSubmit(entities);
+            this.GetEntity().AddRange(entities);
             return entities;
-        }
-
-        #region 需要单独实现
-
-        public bool Update(Expression<Func<T, bool>> filter, T entity)
-        {
-            var query = this.FindOne(filter);
-            if (query == null) return false;
-            this.Update(entity, query);
-            this.Save();
-            return true;
-        }
-        public bool Update(T entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Update(T from, T to)
-        {
-            //Bug 借助ValueInject赋值实现
-            throw new NotImplementedException();
-        }
-
-        public Tuple<bool, string> IsValid(T entity)
-        {
-            return Tuple.Create(true, "");
-        }
-
-
-        public bool IsRepeat(T entity)
-        {
-            return false;
         }
         #endregion
 

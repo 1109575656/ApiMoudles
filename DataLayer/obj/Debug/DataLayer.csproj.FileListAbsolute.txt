@@ -27,3 +27,8 @@ G:\ApiMoudles\DataLayer\bin\Debug\DataLayer.pdb
 G:\ApiMoudles\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache
 G:\ApiMoudles\DataLayer\obj\Debug\DataLayer.dll
 G:\ApiMoudles\DataLayer\obj\Debug\DataLayer.pdb
+G:\ApiMoudles\DataLayer\bin\Debug\DataLayer.dll.config
+G:\ApiMoudles\DataLayer\bin\Debug\EntityFramework.dll
+G:\ApiMoudles\DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+G:\ApiMoudles\DataLayer\bin\Debug\EntityFramework.xml
+G:\ApiMoudles\DataLayer\bin\Debug\EntityFramework.SqlServer.xml

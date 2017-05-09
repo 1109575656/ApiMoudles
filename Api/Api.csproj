@@ -142,6 +142,7 @@
     <Compile Include="Controllers\TestAuthenticationController.cs" />
     <Compile Include="BaseController\TestBaseApiControl.cs" />
     <Compile Include="Controllers\TestAsymEncryptController.cs" />
+    <Compile Include="Controllers\TestBaseController.cs" />
     <Compile Include="Controllers\TestNotEncryptController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

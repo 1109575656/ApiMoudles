@@ -1,0 +1,17 @@
+create database TestSystem
+go
+use TestSystem
+go
+create table Customer(
+Id int primary key identity(1,1),
+LoginName varchar(100),
+[Password] varchar(16),
+Name nvarchar(100),
+PhoneNum varchar(11),
+Email varchar(200),
+Age int,
+Sex nchar(3),
+Author varchar(100)
+)
+go
+select * from Customer

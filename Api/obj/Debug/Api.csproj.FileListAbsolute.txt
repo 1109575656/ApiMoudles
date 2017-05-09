@@ -220,3 +220,5 @@ G:\ApiMoudles\Api\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
 G:\ApiMoudles\Api\obj\Debug\Api.csprojResolveAssemblyReference.cache
 G:\ApiMoudles\Api\obj\Debug\Api.dll
 G:\ApiMoudles\Api\obj\Debug\Api.pdb
+G:\ApiMoudles\Api\bin\EntityFramework.dll
+G:\ApiMoudles\Api\bin\EntityFramework.xml

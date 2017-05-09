@@ -65,3 +65,7 @@ G:\ApiMoudles\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReferen
 G:\ApiMoudles\BusinessLayer\obj\Debug\BusinessLayer.dll
 G:\ApiMoudles\BusinessLayer\obj\Debug\BusinessLayer.pdb
 G:\ApiMoudles\BusinessLayer\bin\Debug\RabbitMQ.Client.dll
+G:\ApiMoudles\BusinessLayer\bin\Debug\EntityFramework.dll
+G:\ApiMoudles\BusinessLayer\bin\Debug\EntityFramework.SqlServer.dll
+G:\ApiMoudles\BusinessLayer\bin\Debug\EntityFramework.xml
+G:\ApiMoudles\BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml

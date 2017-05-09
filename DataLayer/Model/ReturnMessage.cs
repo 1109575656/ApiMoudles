@@ -54,7 +54,17 @@ namespace DataLayer.Model
             this.Remarks = remarks;
             this.Data = data;
         }
+        public static ReturnMessage Success(string remarks,object data) {
+              return new ReturnMessage(ReturnMsgStatuEnum.Success, remarks, data);
+        }
 
-
+        public static ReturnMessage Failed(string remarks, object data)
+        {
+            return new ReturnMessage(ReturnMsgStatuEnum.Failed, remarks, data);
+        }
+        public static ReturnMessage Maintenance(string remarks, object data)
+        {
+            return new ReturnMessage(ReturnMsgStatuEnum.Maintenance, remarks, data);
+        }
     }
 }

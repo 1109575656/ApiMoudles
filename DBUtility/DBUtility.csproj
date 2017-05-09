@@ -55,7 +55,6 @@
   <ItemGroup>
     <Compile Include="ApiHelper.cs" />
     <Compile Include="CacheHelper.cs" />
-    <Compile Include="ConfigHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RabbitMQHelper.cs" />
     <Compile Include="RedisHelper\StackExchangeConn.cs" />

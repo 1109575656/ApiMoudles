@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
@@ -494,6 +495,19 @@ namespace DBUtility
             {
                 return false;
             }
+        }
+        #endregion
+
+        //获取Web.config中指定节点值
+        #region 获取Web.config中指定节点值
+        /// <summary>
+        /// 获取配置文件指定节点
+        /// </summary>
+        /// <param name="nodeKey"></param>
+        /// <returns></returns>
+        public static string GetNodeByName(string nodeKey)
+        {
+            return ConfigurationManager.AppSettings[nodeKey];
         }
         #endregion
     }

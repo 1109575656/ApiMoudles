@@ -3,7 +3,7 @@
 <head>
     <!--<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>-->
     <title></title>
-    <script src="../jquery-1.10.2.js"></script>
+    <script src="../../Scripts/jquery-1.10.2.min.js"></script>
     <script>
         //$(function () {
         //    $.ajax({
@@ -19,15 +19,9 @@
         $(function() {
             $.ajax({
                 //url: "/Api/FYCallBack/RechargeCallBack",
-                "url": "https://api.yupen.cn/Api/FYCallBack/WithdrawCallBack",
+                "url": "http://localhost:8282/V1/TestNotEncrypt/TestPostResponse",
                 data: {
-                    "resp_desc": "%E6%88%90%E5%8A%9F",
-                    "login_id": "18511892429",
-                    "amt": "100",
-                    "resp_code": "0000",
-                    "&mchnt_cd": "0002900F0041270",
-                    "signature": "ML6tJee76XjjYC08IUtr3blM9bpFbrSoFCqrSXRA1XSOBgaZkQ0akJElIsVL8iRoT%2FroIPP4Yep50UgumpABu0GpZa14Y9BrpQ7tHcx6xImL3Coq1iOK8TOEklEwoo6mY%2BlFSHAM9hy4vbYPpz8Pz8URzROyzPT0j8wBCgDWNN0%3D",
-                    "mchnt_txn_ssn": "f7881a339026488895a930"
+                    "Name": "张三"
                 },
                 dataType: "JSON",
                 type: "POST"

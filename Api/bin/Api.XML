@@ -101,9 +101,27 @@
             测试BaseController
             </summary>
         </member>
-        <member name="M:Api.Controllers.TestBaseController.Add">
+        <member name="M:Api.Controllers.TestBaseController.TestSelect">
+            <summary>
+            测试查询
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.TestBaseController.TestAdd">
             <summary>
             测试添加
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.TestBaseController.TestDelete">
+            <summary>
+            测试删除
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.TestBaseController.TestUpdate">
+            <summary>
+            测试修改
             </summary>
             <returns></returns>
         </member>

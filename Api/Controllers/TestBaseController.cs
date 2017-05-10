@@ -18,15 +18,44 @@ namespace Api.Controllers
     public class TestBaseController : BaseApiControl<Customer, ICustomerRepository>
     {
         public TestBaseController():base(new CustomerRepository()) {}
-
+        /// <summary>
+        /// 测试查询
+        /// </summary>
+        /// <returns></returns>
+        [Route("TestSelect")]
+        [HttpGet]
+        public ReturnMessage TestSelect()
+        {
+            return this.Repository.TestSelect();
+        }
         /// <summary>
         /// 测试添加
         /// </summary>
         /// <returns></returns>
-        [Route("Add")]
+        [Route("TestAdd")]
         [HttpGet]
-        public ReturnMessage Add() {
-            return this.Repository.Add();
+        public ReturnMessage TestAdd() {
+            return this.Repository.TestAdd();
+        }
+        /// <summary>
+        /// 测试删除
+        /// </summary>
+        /// <returns></returns>
+        [Route("TestDelete")]
+        [HttpGet]
+        public ReturnMessage TestDelete()
+        {
+            return this.Repository.TestDelete();
+        }
+        /// <summary>
+        /// 测试修改
+        /// </summary>
+        /// <returns></returns>
+        [Route("TestUpdate")]
+        [HttpGet]
+        public ReturnMessage TestUpdate()
+        {
+            return this.Repository.TestUpdate();
         }
     }
 }

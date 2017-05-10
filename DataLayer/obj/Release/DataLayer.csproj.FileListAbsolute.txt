@@ -10,3 +10,13 @@ E:\WxfApi\ApiMoudles\DataLayer\bin\Release\DataLayer.dll
 E:\WxfApi\ApiMoudles\DataLayer\bin\Release\DataLayer.pdb
 E:\WxfApi\ApiMoudles\DataLayer\obj\Release\DataLayer.dll
 E:\WxfApi\ApiMoudles\DataLayer\obj\Release\DataLayer.pdb
+G:\ApiMoudles\DataLayer\bin\Release\DataLayer.dll.config
+G:\ApiMoudles\DataLayer\bin\Release\DataLayer.dll
+G:\ApiMoudles\DataLayer\bin\Release\DataLayer.pdb
+G:\ApiMoudles\DataLayer\bin\Release\EntityFramework.dll
+G:\ApiMoudles\DataLayer\bin\Release\EntityFramework.SqlServer.dll
+G:\ApiMoudles\DataLayer\bin\Release\EntityFramework.xml
+G:\ApiMoudles\DataLayer\bin\Release\EntityFramework.SqlServer.xml
+G:\ApiMoudles\DataLayer\obj\Release\DataLayer.csprojResolveAssemblyReference.cache
+G:\ApiMoudles\DataLayer\obj\Release\DataLayer.dll
+G:\ApiMoudles\DataLayer\obj\Release\DataLayer.pdb

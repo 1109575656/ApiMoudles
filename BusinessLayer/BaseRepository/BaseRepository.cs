@@ -131,7 +131,6 @@ namespace BusinessLayer.BaseRepository
             this.Context = context;
             this.Entity = default(T);
         }
-
         public int Save()
         {
             return this.Context.SaveChanges();
@@ -267,7 +266,6 @@ namespace BusinessLayer.BaseRepository
 
         #endregion
 
-
         #region Dynamic Query
         public IQueryable<T> Query(string filter, object[] parameters)
         {
@@ -304,7 +302,6 @@ namespace BusinessLayer.BaseRepository
 
 
         #endregion
-
 
         #region Utils
         public bool IsExist(Expression<Func<T, bool>> condition)

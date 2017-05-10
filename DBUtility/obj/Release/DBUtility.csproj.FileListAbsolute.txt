@@ -22,3 +22,12 @@ E:\WxfApi\ApiMoudles\DBUtility\bin\Release\Newtonsoft.Json.xml
 E:\WxfApi\ApiMoudles\DBUtility\obj\Release\DBUtility.csprojResolveAssemblyReference.cache
 E:\WxfApi\ApiMoudles\DBUtility\obj\Release\DBUtility.dll
 E:\WxfApi\ApiMoudles\DBUtility\obj\Release\DBUtility.pdb
+G:\ApiMoudles\DBUtility\bin\Release\DBUtility.dll
+G:\ApiMoudles\DBUtility\bin\Release\DBUtility.pdb
+G:\ApiMoudles\DBUtility\bin\Release\Newtonsoft.Json.dll
+G:\ApiMoudles\DBUtility\bin\Release\RabbitMQ.Client.dll
+G:\ApiMoudles\DBUtility\bin\Release\StackExchange.Redis.dll
+G:\ApiMoudles\DBUtility\bin\Release\Newtonsoft.Json.xml
+G:\ApiMoudles\DBUtility\obj\Release\DBUtility.csprojResolveAssemblyReference.cache
+G:\ApiMoudles\DBUtility\obj\Release\DBUtility.dll
+G:\ApiMoudles\DBUtility\obj\Release\DBUtility.pdb

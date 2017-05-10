@@ -57,7 +57,6 @@ namespace DataLayer.Model
         public static ReturnMessage Success(string remarks,object data) {
               return new ReturnMessage(ReturnMsgStatuEnum.Success, remarks, data);
         }
-
         public static ReturnMessage Failed(string remarks, object data)
         {
             return new ReturnMessage(ReturnMsgStatuEnum.Failed, remarks, data);

@@ -20,11 +20,6 @@
                 当前用户ID，NULL为未登陆
             </summary>
         </member>
-        <member name="T:Api.Controllers.TestAuthenticationController">
-            <summary>
-                测试身份认证和授权
-            </summary>
-        </member>
         <member name="T:Api.BaseController.TestBaseApiControl`1">
             <summary>
                 测试父类
@@ -42,6 +37,11 @@
                 业务类
             </summary>
         </member>
+        <member name="T:Api.Controllers.TestAuthenticationController">
+            <summary>
+                测试身份认证和授权
+            </summary>
+        </member>
         <member name="M:Api.Controllers.TestAuthenticationController.#ctor">
             <summary>
                 实现
@@ -52,6 +52,24 @@
                 登陆（DES对称加密，密钥：a!s@d#f$）
             </summary>
             <param name="req">{"LoginName":"1109575656","Password":"1109575656"} 加密后：{"DecryptT":"NkZSq7z1Q7HmOcyEyFBAwweysI/HDm/aQt+8R+cYpxZY4Zrj5W4qh3YatzB7B7yp78Z0OHpFvHE="}</param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.TestAuthenticationController.TestRoles3">
+            <summary>
+            测试
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.TestAuthenticationController.TestRoles">
+            <summary>
+            测试zhangsan角色(必须登陆)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.TestAuthenticationController.TestRoles2">
+            <summary>
+            测试admin角色(必须登陆)
+            </summary>
             <returns></returns>
         </member>
         <member name="M:Api.Controllers.TestAuthenticationController.SignOut">
@@ -76,6 +94,17 @@
                 测试非对称加密
             </summary>
             <param name="req">{"Name":"张三","Age":"12","Timestamp":"636196450812777599","Sign":"eAEgBKbAAG0L8aLRNt0QVcgR/uBQ2+UgPr9hJFyeWhE5OWuGfSZEV696um2uJs7qjzS2umlBUF9TYx2lphI6/VUjiSBqlTX0b8kfL83d/5wzmM/r5GIGkReRZUoYQnwn8Be1FK+k8H2dMtrUuOepp43KSTYRGmfMW9+3RXoM410="}</param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Controllers.TestBaseController">
+            <summary>
+            测试BaseController
+            </summary>
+        </member>
+        <member name="M:Api.Controllers.TestBaseController.Add">
+            <summary>
+            测试添加
+            </summary>
             <returns></returns>
         </member>
         <member name="T:Api.Controllers.TestNotEncryptController">

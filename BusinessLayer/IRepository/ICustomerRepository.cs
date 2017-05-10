@@ -4,6 +4,9 @@ namespace BusinessLayer.IRepository
 {
     public interface ICustomerRepository: IGenericRepository<Customer>
     {
-        ReturnMessage Add();
+        ReturnMessage TestAdd();
+        ReturnMessage TestDelete();
+        ReturnMessage TestUpdate();
+        ReturnMessage TestSelect();
     }
 }
